@@ -5,16 +5,17 @@
 
 <!-- SUMMARY_START -->
 **Current Focus (auto-maintained by Agent):**
-- Update docs to reflect the merged persistent agent workflow (memory kit + Codex extension).
-- Validate the handoff UI, command wiring, and active agent selection on VS Code stable.
-- Ensure Windows support is solid across scripts, paths, and instructions.
+- Reversion Ladder: AI-driven interactive webtoon platform ready for live deployment.
+- All code scaffolds complete (Express backend, Next.js frontend, Supabase schema).
+- Chapter 1 narrative finalized (35 panels, 2 choice points, 9 narrative paths).
+- Deployment documentation ready; awaiting manual setup on Supabase, Railway, Vercel.
 <!-- SUMMARY_END -->
 
 ---
 
 ## Current Objective
 
-Deliver a coherent persistent agent workflow template with accurate docs and a stable Codex handoff extension.
+Deploy Reversion Ladder to production (Supabase + Railway + Vercel), seed Chapter 1, and validate reader flow end-to-end.
 
 ---
 
@@ -26,19 +27,33 @@ Deliver a coherent persistent agent workflow template with accurate docs and a s
 
 ## What We Are Working On Right Now
 
-- [x] Replace MCP framing in docs with the persistent agent workflow source of truth.
-- [ ] Document the extension handoff UX (status bar, tree view, commands).
-- [ ] Verify command wiring and basic smoke tests on VS Code stable.
+- [x] Complete backend scaffold (Express, CORS, Supabase client, Pollinations.ai integration).
+- [x] Complete frontend scaffold (Next.js 14, ReaderPanel, ChoicePrompt, Tailwind CSS).
+- [x] Database schema design (5 tables: chapters, user_progress, user_choices, sketches, ai_continuations).
+- [x] Chapter 1 narrative JSON with sketch prompts and branching paths.
+- [x] Deployment guides (DEPLOYMENT_SETUP.md, SUPABASE_SCHEMA.md).
+- [x] Git repo setup and code push (https://github.com/Mixers28/Reversion-ladder).
+- [ ] Supabase project creation and schema initialization.
+- [ ] Chapter 1 seeding via seed-supabase.js.
+- [ ] Railway backend deployment with env vars.
+- [ ] Vercel frontend deployment with API URL config.
+- [ ] CORS update and integration testing.
 
 ---
 
 ## Next Small Deliverables
 
-- A clear usage section for selecting and handing off to agents.
-- A quick validation note or checklist for Windows behavior.
+- Deploy backend to Railway (env vars: SUPABASE_URL, SUPABASE_KEY, PORT=3001).
+- Deploy frontend to Vercel (env var: NEXT_PUBLIC_API_URL pointing to Railway).
+- Verify Chapter 1 loads in browser and choices transition panels.
+- Test sketch generation at choice points (Pollinations.ai integration).
 
 ---
 
 ## Notes / Scratchpad
 
-- MCP terminology is deprecated; the new design doc is `docs/PERSISTENT_AGENT_WORKFLOW.md`.
+- Free tier stack: Vercel (frontend), Railway (backend $5/mo after free), Supabase (database).
+- Pollinations.ai image generation is free (no API key required).
+- MVP scope: Chapter 1 only (35 panels), 2 interactive choice points, sketch generation at key scenes.
+- Optional Phase 2: OpenAI integration for AI-generated story continuations (marked in backend/src/routes/choices.ts).
+- GitHub repo: https://github.com/Mixers28/Reversion-ladder (all code committed and pushed).
