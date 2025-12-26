@@ -16,6 +16,7 @@ interface ReaderPanelProps {
   currentIndex: number;
   totalPanels: number;
   apiUrl?: string;
+  styleId?: string; // WORTHY style preset (grave_black_ink, clean_manhwa_shade, etc.)
 }
 
 const ReaderPanel: React.FC<ReaderPanelProps> = ({
@@ -24,6 +25,7 @@ const ReaderPanel: React.FC<ReaderPanelProps> = ({
   currentIndex,
   totalPanels,
   apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001/api',
+  styleId = 'grave_black_ink', // WORTHY default style
 }) => {
   const [imageUrl, setImageUrl] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
@@ -31,8 +33,8 @@ const ReaderPanel: React.FC<ReaderPanelProps> = ({
 
   useEffect(() => {
     const generateSketch = async () => {
-      // Check localStorage cache first
-      const cacheKey = `sketch_panel_${panelData.panel_id}`;
+      // Check localStorage cache first (include style in cache key so different styles get fresh images)
+      const cacheKey = `sketch_panel_${panelData.panel_id}_${styleId}`;
       const cachedUrl = typeof window !== 'undefined' ? localStorage.getItem(cacheKey) : null;
       
       if (cachedUrl) {
@@ -52,6 +54,7 @@ const ReaderPanel: React.FC<ReaderPanelProps> = ({
             prompt,
             panel_id: panelData.panel_id,
             scene: panelData.scene,
+            style_id: styleId,
           }),
         });
         
@@ -60,7 +63,7 @@ const ReaderPanel: React.FC<ReaderPanelProps> = ({
         const data = await response.json();
         setImageUrl(data.image_url);
         
-        // Cache the image URL for future reloads
+        // Cache the image URL for future reloads (with style in key)
         if (typeof window !== 'undefined') {
           localStorage.setItem(cacheKey, data.image_url);
         }
@@ -73,7 +76,7 @@ const ReaderPanel: React.FC<ReaderPanelProps> = ({
     };
 
     generateSketch();
-  }, [panelData.panel_id, panelData.scene, panelData.visual_notes, apiUrl]);
+  }, [panelData.panel_id, panelData.scene, panelData.visual_notes, apiUrl, styleId]);
   return (
     <div
       className="min-h-screen bg-cosmic flex flex-col justify-center items-center p-6 cursor-pointer"
