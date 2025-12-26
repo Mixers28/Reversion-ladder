@@ -55,13 +55,11 @@ export default function Chapter() {
 
   const handleChoiceSelect = async (choiceId: string, branchId: string) => {
     setSelectedChoices(new Map(selectedChoices).set(choiceId, branchId));
-
-    const choice = choices.find((c) => c.choice_id === choiceId);
-    if (choice) {
-      const nextJump = choice.branches.find((b) => b.id === branchId)?.next_scene_jump;
-      if (nextJump) {
-        setCurrentPanel(nextJump);
-      }
+    
+    // TODO: Implement choice branching logic
+    // For now, just advance to next panel
+    if (currentPanel < panels.length - 1) {
+      setCurrentPanel(currentPanel + 1);
     }
   };
 
