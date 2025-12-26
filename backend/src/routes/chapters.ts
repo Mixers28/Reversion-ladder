@@ -1,7 +1,7 @@
 import { Router, Request, Response } from 'express';
 import { supabase } from '../index';
 // MVP: Serving hardcoded Chapter 1 from WORTHY Story Bible (UPDATED version - canonical)
-import chapterData from '../../Reverson Ladder (UPDATED).json';
+const chapterData = require('../../Reverson Ladder (UPDATED).json');
 
 const router = Router();
 
