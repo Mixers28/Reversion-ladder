@@ -60,13 +60,6 @@ const ReaderPanel: React.FC<ReaderPanelProps> = ({
 
     generateSketch();
   }, [panelData.panel_id, panelData.scene, panelData.visual_notes, apiUrl]);
-
-const ReaderPanel: React.FC<ReaderPanelProps> = ({
-  panelData,
-  onScroll,
-  currentIndex,
-  totalPanels,
-}) => {
   return (
     <div
       className="min-h-screen bg-cosmic flex flex-col justify-center items-center p-6 cursor-pointer"
