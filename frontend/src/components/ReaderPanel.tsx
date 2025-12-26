@@ -31,6 +31,15 @@ const ReaderPanel: React.FC<ReaderPanelProps> = ({
 
   useEffect(() => {
     const generateSketch = async () => {
+      // Check localStorage cache first
+      const cacheKey = `sketch_panel_${panelData.panel_id}`;
+      const cachedUrl = typeof window !== 'undefined' ? localStorage.getItem(cacheKey) : null;
+      
+      if (cachedUrl) {
+        setImageUrl(cachedUrl);
+        return;
+      }
+
       setLoading(true);
       setError(null);
       
@@ -50,6 +59,11 @@ const ReaderPanel: React.FC<ReaderPanelProps> = ({
         
         const data = await response.json();
         setImageUrl(data.image_url);
+        
+        // Cache the image URL for future reloads
+        if (typeof window !== 'undefined') {
+          localStorage.setItem(cacheKey, data.image_url);
+        }
       } catch (err) {
         console.error('Sketch generation error:', err);
         setError('Could not generate sketch');
