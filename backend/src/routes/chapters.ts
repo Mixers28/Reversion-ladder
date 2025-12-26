@@ -1,5 +1,7 @@
 import { Router, Request, Response } from 'express';
 import { supabase } from '../index';
+// MVP: Serving hardcoded Chapter 1 from WORTHY Story Bible (UPDATED version - canonical)
+import chapterData from '../../Reverson Ladder (UPDATED).json';
 
 const router = Router();
 
@@ -8,19 +10,22 @@ router.get('/:chapterId', async (req: Request, res: Response) => {
   try {
     const { chapterId } = req.params;
 
-    // Fetch from Supabase
-    const { data, error } = await supabase
-      .from('chapters')
-      .select('*')
-      .eq('id', chapterId)
-      .single();
+    // MVP: Serve from hardcoded file (Worthy Story Bible UPDATED - canonical)
+    if (chapterId === 'ch01_opening') {
+      return res.json(chapterData);
+    }
 
-    if (error) throw error;
-    if (!data) return res.status(404).json({ error: 'Chapter not found' });
+    // Future: Fetch from Supabase once seeded with WORTHY story data
+    // const { data, error } = await supabase
+    //   .from('chapters')
+    //   .select('*')
+    //   .eq('id', chapterId)
+    //   .single();
+    // if (error) throw error;
 
-    res.json(data);
+    res.status(404).json({ error: 'Chapter not found' });
   } catch (error) {
-    console.error(error);
+    console.error('Chapter fetch error:', error);
     res.status(500).json({ error: 'Failed to fetch chapter' });
   }
 });

@@ -1,4 +1,4 @@
-# Deployment & Setup Guide: Reversion Ladder
+# Deployment & Setup Guide: WORTHY
 
 ## Quick Start (15 minutes)
 
@@ -48,10 +48,10 @@ Then in Supabase Dashboard → **SQL Editor** → Paste & Execute.
 2. Click **"+ Insert Row"**
 3. Fill in fields:
    - `id`: `ch01_opening`
-   - `title`: `Chapter 1: The Tribunal`
-   - `description`: `The Tribunal judges an ex-apex cultivator. A fall. A crack. A mortal realm awakening.`
-   - `panels`: Paste the entire `panels` array from [Reverson Ladder.json](../../Reverson%20Ladder.json)
-   - `choice_points`: Paste the entire `choice_points` array from [Reverson Ladder.json](../../Reverson%20Ladder.json)
+   - `title`: `Chapter 1: Opening` (or from Worthy Story Bible)
+   - `description`: From Worthy Story Bible Chapter 1 description
+   - `panels`: Paste the entire `panels` array from [Reverson Ladder (UPDATED).json](../../Reverson%20Ladder%20%28UPDATED%29.json) ← **Use UPDATED version, not old Reversion Ladder**
+   - `choice_points`: Paste the entire `choice_points` array from [Reverson Ladder (UPDATED).json](../../Reverson%20Ladder%20%28UPDATED%29.json)
    - `status`: `published`
 4. Click **"Save"**
 

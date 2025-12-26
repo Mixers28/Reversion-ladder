@@ -1,0 +1,172 @@
+# Project: (Working Title) **WORTHY**
+**Format:** Manhua/Webtoon vertical scroll  
+**Goal:** A coherent **Season 1–3 arc** + a **panel-ready Chapter 1 opening** that matches our current direction:
+- **Chapter 1 starts in a mass grave** (grim with nervous humor).
+- MC carries a **subtle rash-like Mark** (looks like infection).
+- Power grows through **Five Pillars → Unification → Authority**.
+- **The Filter** gates ascension; those who pass become myths below and “scammers/hustlers” above.
+
+---
+
+## 0) One-line Hook
+A young man wakes up in a **battlefield mass grave** with a strange **rash-like Mark** and no safe place to exist. Forced into a ruthless survivor’s mask, he climbs a brutal cultivation ladder—until the world’s ceiling (the **Filter**) reveals that survival isn’t enough: only those who can unify the **Five Pillars** and earn **Authority** can pass.
+
+---
+
+## 1) Core Concept (Refined)
+### Premise
+- A regional war and catastrophe leave bodies piled outside a wary village.
+- The MC wakes among corpses, immediately hunted by circumstance: scavengers, guards, and whoever wants **no survivors**.
+- His **Mark** is treated as “infection/curse,” but it behaves *wrong* in subtle ways (heat/pulse under threat).
+- As the MC trains, he discovers “power” isn’t one stat; it’s **Five Pillars** that must eventually be unified.
+- When someone reaches the local peak, they may “disappear” through **the Filter**—rarely, and usually as legend.
+- In higher worlds, ascenders are treated like **myths / scammers / liabilities**, and start as the weakest again.
+
+### Signature Motifs
+- **Grave-born survivor**: mud, flies, cold breath, triage tents, hostile stares
+- **Mask vs self**: ruthless hustler exterior vs principled protector core
+- **World ceilings**: every realm has a hard cap; “peak” is just another rung
+- **Filter myths**: “they vanished,” “heaven took them,” “it’s a scam”
+- **Authority as judgment**: real peak power is restraint + governance, not just output
+
+---
+
+## 2) The Power System (Our Canon)
+### The Five Pillars
+1) **Core (Fuel/Capacity)** — how much power you can hold; purity; stability  
+2) **Body (Vessel/Hardware)** — resilience, recovery, tolerance for recoil  
+3) **Mind (Control/Processor)** — focus, perception, precision, stability  
+4) **Flow (Circulation/Efficiency)** — conversion rate, stamina efficiency, smooth chaining  
+5) **Domain/Intent (Meaning/Rules)** — the “law” your power expresses; coherence; contradiction penalties
+
+### Interaction Rule (simple + writeable)
+**Output = Core × Flow × Mind**, limited by **Body**, and *defined* by **Domain/Intent**.
+
+### Stages (mapped to Pillars)
+- **Awakening** (Flow/Mind basics)  
+- **Refinement** (Core growth, purity)  
+- **Tempering** (Body as container)  
+- **Shaping** (Mind precision)  
+- **Harmonics** (Flow efficiency leap)  
+- **Intent Seed** (Domain begins; contradictions hurt)  
+- **Domain Bloom** (Domain affects environment in bounded radius)  
+- **Fivefold Cycle** (**Unification**; “Lower Gods” gate)  
+- **Judgment** (restraint, governance under pressure)  
+- **Authority** (reality acknowledges your Domain as enforceable)
+
+---
+
+## 3) The Mark (Rash-like “Infection”)
+### What readers see (early)
+- Looks like a **rash/infection**: faint reddened veins in a ring or branching pattern.
+- It itches/burns like fever.
+- It is **subtle**—easy to hide under cloth.
+
+### What it does (seeded, not explained)
+- **Reacts to threat**: warms/pulses when “hunters/survivor-killers” are near.
+- **Reacts to self-contradiction** (later): turbulence/recoil if MC breaks a vow or betrays his own principles.
+
+### What it becomes (late reveal)
+- The Mark is tied to the **Filter** (debt/anomaly/selection scar).  
+- Higher worlds recognize it as a sign you’re “not supposed to exist” (hence the scammer/liability stigma).
+
+---
+
+## 4) Season 1–3 Arc Outline (High-Level)
+### Season 1 — **The Mass Grave**
+**Theme:** survival, beginnings, learning power from zero  
+- Ch.1: wake in mass grave; scavengers; triage; village paranoia  
+- MC learns early **Flow + Mind** tricks to survive (efficiency + reading people).  
+- Mask forms: ruthless survivor / clever hustler.  
+- Protector core leaks through in small actions (saving one person costs him).  
+- End-season promise: **the Mark reacts** to something bigger than local war.
+
+### Season 2 — **Ashfall & Warlords**
+**Theme:** the world is broken; power has politics  
+- Warlords/guilds exploit catastrophe; “no survivors” becomes policy.  
+- MC is hunted as a liability, not a hero.  
+- He finds fragments of the Pillar system (mentor texts, herb quarter methods).  
+- First glimpse of **Intent** (not elemental; concept-driven).  
+- Reveal: the “meteor” wasn’t just weather—something about it triggers the Mark.
+
+### Season 3 — **The Ceiling (Filter)**
+**Theme:** peak is just a rung  
+- MC reaches the local cap and hits the “invisible wall.”  
+- Rare “disappearances” are confirmed as **Filter events**.  
+- Ascenders are myths below; in the higher world they’re treated as hustlers/scammers.  
+- MC is forced to rebuild from weakest tier, but with superior **efficiency + system thinking**.
+- Season ends with the true endgame: **Unification → Judgment → Authority**.
+
+---
+
+## 5) Chapter 1 — Panel-Ready Capture (Current Canon)
+Tone: **grim with nervous humor**.  
+Rule: **no lore lecture** in Chapter 1—only fragments + threat + mystery.
+
+### Scene A — Black / Muffled Voices (Hook)
+- Black panel → muffled voices → wet earth, flies  
+- Blurry scavenger crouched over MC, poking him with a stick
+
+**Key lines**
+- MC (half-asleep): “Five more minutes… mom.”  
+- Scavenger (nervous, low): “...Did the dead just complain?”
+
+### Scene B — Mass Grave Reveal + Mark Seed
+- MC sits up → wide reveal of corpses and mud  
+- He gags; shock  
+- He braces on his forearm and sees the **rash-like Mark** (itching heat)
+
+**Rule:** Mark is not explained—only shown reacting faintly.
+
+### Scene C — Survival Test (Ruthless + Protector in one beat)
+- Scavengers debate: alive = trouble  
+- A knife moves to “finish” a nearby twitching body  
+- MC stops it (protector leak), then immediately hides it (survivor mask)
+
+**Theme line**
+- MC (thought): “Don’t be seen. Don’t be kind. Live.”
+
+### Scene D — Dragged to Triage (Worldbuilding as gossip fragments)
+- Triage tents, guards, hostile villagers  
+- Whisper fragments only:
+  - “Two foreign banners.”  
+  - “The sky burned—judgment.”  
+  - “If scouts find survivors… they make sure there aren’t any.”
+
+### Scene E — Threat + Mark Reaction (Cliffhanger)
+- Horn/signal; scout silhouettes on ridge  
+- Medic warns MC: “If they find survivors… they kill them.”  
+- Mark flares hotter under sleeve (subtle pulse)  
+- Final close-up: MC’s eyes sharpen—calculation
+
+**End line (thought):** “So I’m not supposed to exist.”
+
+---
+
+## 6) Visual Language (Panel cues)
+- **Mass grave:** heavy blacks, tight claustrophobic crops → sudden wide reveal  
+- **Mark:** subtle red/vein pattern; one panel of heat haze or pulse SFX (*throb…*)  
+- **Flow mastery:** clean breath SFX, smooth motion lines, “too efficient” contrast  
+- **Mind mastery:** small eye close-ups, micro-pauses, pattern callouts  
+- **Domain/Intent:** later—panel borders subtly tilt or “rule” overlays appear  
+- **Filter foreshadow:** whispered myths, refracted speech bubbles in old texts (not shown directly in Ch.1)
+
+---
+
+## 7) Repo/Agent Notes (VS Code)
+Suggested layout:
+- `/story/`
+  - `story_bible.md` (this file)
+  - `arc_outline.md` (Season beats + reveals)
+  - `power_system.md` (Five Pillars + stages)
+- `/chapters/`
+  - `ch01_source_of_truth.md` (panel beats + dialogue options)
+  - `ch01_script.md` (final panel script)
+- `/art/`
+  - `visual_language.md` (SFX, bubbles, motifs)
+  - `symbols_mark.md` (Mark variations, concealment, flare states)
+
+Next tasks:
+1) Lock Chapter 1 panel count + scroll pacing.
+2) Decide MC name + scavenger names + village name.
+3) Draft Chapter 1 **full script**: panel descriptions + dialogue bubbles + SFX.

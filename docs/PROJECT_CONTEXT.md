@@ -5,23 +5,26 @@
 
 <!-- SUMMARY_START -->
 **Summary (auto-maintained by Agent):**
-- Reversion Ladder: Interactive AI-driven webtoon platform where readers make story choices and AI assists with narrative and sketches.
-- Free-tier deployment: Next.js 14 frontend (Vercel), Express.js backend (Railway), Supabase PostgreSQL (database), Pollinations.ai (image generation).
-- MVP scope: Chapter 1 with 35 panels, 2 choice points, branching narrative paths (9 total), sketch generation at key scenes.
-- Production-ready: All code scaffolds complete, database schema designed, deployment guides written.
+- **WORTHY:** Interactive AI-driven webtoon platform where readers make story choices and AI assists with narrative and sketches.
+- **Canon:** Worthy Story Bible.md + Reverson Ladder (UPDATED).json (mass grave opening, Five Pillars power system, The Filter).
+- **Free-tier deployment:** Next.js 14 frontend (Vercel), Express.js backend (Railway), Supabase PostgreSQL (database), Pollinations.ai (image generation).
+- **MVP scope:** Chapter 1 with 35 panels, 2 choice points, branching narrative paths (9 total), sketch generation at key scenes.
+- **Status:** Live on https://reversion-ladder-wnp6.vercel.app with AI sketch generation working end-to-end.
 <!-- SUMMARY_END -->
 
 ---
 
 ## 1. Project Overview
 
-- **Name:** Reversion Ladder
+- **Name:** WORTHY (Working Title)
 - **Owner:** User (solo developer)
 - **Purpose:** Create an interactive webtoon platform where readers drive story via AI-assisted branching choices and witness AI-generated sketches of key scenes.
+- **Canon References:** [Worthy Story Bible.md](../Worthy%20Story%20Bible.md) and [Reverson Ladder (UPDATED).json](../Reverson%20Ladder%20%28UPDATED%29.json) ← **Use these, not old Reversion Ladder versions**
+- **Core Concept:** Chapter 1 opens in a battlefield mass grave (grim + dark humor). MC carries a Mark. Power system: Five Pillars → Unification → Authority. The Filter gates ascension.
 - **Core Thesis:** Readers + AI create the narrative together. Low budget. Free tier stack.
 - **Primary Stack:** Next.js 14 (frontend), Express.js (backend), Supabase PostgreSQL (database), Pollinations.ai (sketch generation).
 - **Deployment:** Vercel (frontend), Railway (backend), Supabase (database) — all free or low-cost tiers.
-- **Status:** MVP code-complete; awaiting manual cloud deployment and Chapter 1 seeding.
+- **Status:** MVP live at https://reversion-ladder-wnp6.vercel.app with panels loading and AI sketches generating.
 
 ---
 
