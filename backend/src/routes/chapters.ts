@@ -1,7 +1,18 @@
 import { Router, Request, Response } from 'express';
+import { readFileSync } from 'fs';
+import { resolve } from 'path';
 import { supabase } from '../index';
+
 // MVP: Serving hardcoded Chapter 1 from WORTHY Story Bible (UPDATED version - canonical)
-const chapterData = require('../../Reverson Ladder (UPDATED).json');
+// Load at startup to avoid require() issues with spaces in filenames
+let chapterData: any = null;
+try {
+  const chapterPath = resolve(__dirname, '../../Reverson Ladder (UPDATED).json');
+  const fileContent = readFileSync(chapterPath, 'utf-8');
+  chapterData = JSON.parse(fileContent);
+} catch (err) {
+  console.error('Failed to load chapter data:', err);
+}
 
 const router = Router();
 
@@ -11,7 +22,7 @@ router.get('/:chapterId', async (req: Request, res: Response) => {
     const { chapterId } = req.params;
 
     // MVP: Serve from hardcoded file (Worthy Story Bible UPDATED - canonical)
-    if (chapterId === 'ch01_opening') {
+    if (chapterId === 'ch01_opening' && chapterData) {
       return res.json(chapterData);
     }
 
