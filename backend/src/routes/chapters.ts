@@ -7,7 +7,7 @@ import { supabase } from '../index';
 // Load at startup to avoid require() issues with spaces in filenames
 let chapterData: any = null;
 try {
-  // Load from data.json in src directory
+  // Load from data.json in dist/routes directory (copied by build script)
   const chapterPath = resolve(__dirname, './data.json');
   const fileContent = readFileSync(chapterPath, 'utf-8');
   chapterData = JSON.parse(fileContent);

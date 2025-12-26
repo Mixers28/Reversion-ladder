@@ -1,0 +1,565 @@
+{
+  "project": {
+    "working_title": "WORTHY",
+    "format": "manhua/webtoon_vertical_scroll",
+    "chapter": "ch01_opening",
+    "canon_notes": [
+      "Chapter 1 starts in a battlefield mass grave; tone is grim with nervous humor.",
+      "MC carries a subtle rash-like Mark (appears as infection) that reacts to threat.",
+      "Power system is Five Pillars → Unification → Judgment → Authority.",
+      "The Filter gates ascension; rare passers become myths below and 'scammers' above."
+    ]
+  },
+  "power_system": {
+    "pillars": {
+      "core": "Capacity/purity/stability; fuel reserve.",
+      "body": "Vessel integrity, resilience, recoil tolerance.",
+      "mind": "Control, perception, precision, stability.",
+      "flow": "Circulation, efficiency, conversion rate, chaining.",
+      "domain_intent": "Meaning/rules; coherence; contradictions cause backlash."
+    },
+    "interaction_rule": "Output = Core × Flow × Mind, limited by Body, defined by Domain/Intent.",
+    "stages": [
+      "Awakening",
+      "Refinement",
+      "Tempering",
+      "Shaping",
+      "Harmonics",
+      "Intent Seed",
+      "Domain Bloom",
+      "Fivefold Cycle (Unification)",
+      "Judgment",
+      "Authority"
+    ]
+  },
+  "season_arcs": [
+    {
+      "season": 1,
+      "title": "The Mass Grave",
+      "theme": "Survival and learning power from zero; mask vs self begins.",
+      "beats": [
+        "Wake in mass grave; scavengers; triage; village paranoia.",
+        "Early mastery: Flow + Mind efficiency to survive.",
+        "Protector impulse leaks through, creating internal contradiction."
+      ]
+    },
+    {
+      "season": 2,
+      "title": "Ashfall & Warlords",
+      "theme": "Catastrophe politics; hunted as a liability; Intent begins.",
+      "beats": [
+        "Warlords and factions exploit disaster; survivors are hunted.",
+        "MC learns Pillar fragments via herbs/mentors/field practice.",
+        "Mark begins reacting to larger forces; meteor event gains meaning."
+      ]
+    },
+    {
+      "season": 3,
+      "title": "The Ceiling (Filter)",
+      "theme": "Peak is a rung; ascension myths; higher world stigma.",
+      "beats": [
+        "Local cap reached; Filter becomes real mechanism.",
+        "Ascenders vanish rarely; myths below, scammers above.",
+        "MC restarts as weakest in higher world but with superior efficiency."
+      ]
+    }
+  ],
+  "style_language": {
+    "speech_bubbles": {
+      "normal": {
+        "border": "clean",
+        "opacity": 1.0,
+        "tail": "normal"
+      },
+      "whispers": {
+        "border": "thin",
+        "opacity": 0.85,
+        "tail": "short",
+        "text_fx": "small_caps_optional"
+      }
+    },
+    "motifs": {
+      "mark": [
+        "subtle_red_vein_rash",
+        "itch_heat",
+        "pulse_sfx_throb"
+      ],
+      "grave": [
+        "flies",
+        "mud",
+        "tight_claustrophobic_crops",
+        "sudden_wide_reveal"
+      ],
+      "threat": [
+        "distant_horn",
+        "ridge_silhouettes",
+        "villager_stares"
+      ]
+    }
+  },
+  "panels": [
+    {
+      "panel_id": 1,
+      "scene": "A_BLACK_MUFFLED",
+      "shot": "full_black",
+      "location": "mass_grave",
+      "characters": [],
+      "dialogue": [],
+      "sfx": [
+        "bzzzz",
+        "scrape…"
+      ],
+      "visual_notes": [
+        "Full black panel. Muffled voices. Wet earth shifting. Flies."
+      ]
+    },
+    {
+      "panel_id": 2,
+      "scene": "A_BLACK_MUFFLED",
+      "shot": "blur_reveal",
+      "location": "mass_grave",
+      "characters": [
+        "SCAVENGER_1"
+      ],
+      "dialogue": [],
+      "sfx": [],
+      "visual_notes": [
+        "Black fades into blurred silhouette crouched over MC."
+      ]
+    },
+    {
+      "panel_id": 3,
+      "scene": "A_BLACK_MUFFLED",
+      "shot": "close_insert",
+      "location": "mass_grave",
+      "characters": [
+        "SCAVENGER_1"
+      ],
+      "dialogue": [
+        {
+          "speaker": "SCAVENGER_1",
+          "text": "This one’s… not stiff."
+        },
+        {
+          "speaker": "SCAVENGER_2_OFF",
+          "text": "Then strip him before he is."
+        }
+      ],
+      "sfx": [
+        "tap… tap…"
+      ],
+      "visual_notes": [
+        "Stick prods MC’s ribs through torn cloth."
+      ]
+    },
+    {
+      "panel_id": 4,
+      "scene": "B_GRAVE_REVEAL",
+      "shot": "close",
+      "location": "mass_grave",
+      "characters": [
+        "MC"
+      ],
+      "dialogue": [
+        {
+          "speaker": "MC",
+          "text": "Five more minutes… mom…"
+        }
+      ],
+      "sfx": [],
+      "visual_notes": [
+        "MC swats the stick away, eyes closed."
+      ]
+    },
+    {
+      "panel_id": 5,
+      "scene": "B_GRAVE_REVEAL",
+      "shot": "beat_silence",
+      "location": "mass_grave",
+      "characters": [
+        "SCAVENGER_1"
+      ],
+      "dialogue": [
+        {
+          "speaker": "SCAVENGER_1",
+          "text": "…Did the dead just complain?"
+        }
+      ],
+      "sfx": [],
+      "visual_notes": [
+        "Stick stops mid-air. Scavenger frozen, uneasy."
+      ]
+    },
+    {
+      "panel_id": 6,
+      "scene": "B_GRAVE_REVEAL",
+      "shot": "wide_reveal",
+      "location": "mass_grave",
+      "characters": [
+        "MC"
+      ],
+      "dialogue": [
+        {
+          "speaker": "MC",
+          "text": "What…"
+        }
+      ],
+      "sfx": [],
+      "visual_notes": [
+        "MC sits up. Wide reveal: corpses piled in mud, torn banners, broken spears, smoke in distance."
+      ]
+    },
+    {
+      "panel_id": 7,
+      "scene": "B_GRAVE_REVEAL",
+      "shot": "rapid_closeups",
+      "location": "mass_grave",
+      "characters": [],
+      "dialogue": [],
+      "sfx": [
+        "retch"
+      ],
+      "visual_notes": [
+        "Close-ups: dead fingers, flies, blood crust. MC gags."
+      ]
+    },
+    {
+      "panel_id": 8,
+      "scene": "B_GRAVE_REVEAL",
+      "shot": "close_insert",
+      "location": "mass_grave",
+      "characters": [
+        "MC"
+      ],
+      "dialogue": [
+        {
+          "speaker": "MC_THOUGHT",
+          "text": "…What is that?"
+        }
+      ],
+      "sfx": [
+        "throb…"
+      ],
+      "visual_notes": [
+        "MC braces on forearm and sees a faint rash-like mark (reddened vein ring/branch pattern).",
+        "Looks like infection; subtle heat/pulse cue."
+      ],
+      "continuity_flags": [
+        "seed_mark_unexplained"
+      ]
+    },
+    {
+      "panel_id": 9,
+      "scene": "B_GRAVE_REVEAL",
+      "shot": "medium",
+      "location": "mass_grave",
+      "characters": [
+        "MC"
+      ],
+      "dialogue": [
+        {
+          "speaker": "MC_THOUGHT",
+          "text": "Don’t be seen."
+        }
+      ],
+      "sfx": [],
+      "visual_notes": [
+        "MC forces himself lower back into the pile—plays dead."
+      ]
+    },
+    {
+      "panel_id": 10,
+      "scene": "C_SCAVENGERS",
+      "shot": "medium",
+      "location": "mass_grave",
+      "characters": [
+        "SCAVENGER_1",
+        "SCAVENGER_2"
+      ],
+      "dialogue": [
+        {
+          "speaker": "SCAVENGER_1",
+          "text": "He’s warm."
+        },
+        {
+          "speaker": "SCAVENGER_2",
+          "text": "Warm means alive. Alive means trouble."
+        }
+      ],
+      "sfx": [
+        "tap TAP"
+      ],
+      "visual_notes": [
+        "Scavenger prods harder; MC stays limp."
+      ]
+    },
+    {
+      "panel_id": 11,
+      "scene": "C_SCAVENGERS",
+      "shot": "close",
+      "location": "mass_grave",
+      "characters": [
+        "SCAVENGER_2"
+      ],
+      "dialogue": [],
+      "sfx": [
+        "shnk"
+      ],
+      "visual_notes": [
+        "Knife flashes—aimed at a nearby twitching 'corpse' to finish it."
+      ]
+    },
+    {
+      "panel_id": 12,
+      "scene": "C_SCAVENGERS",
+      "shot": "action_close",
+      "location": "mass_grave",
+      "characters": [
+        "MC",
+        "SCAVENGER_2"
+      ],
+      "dialogue": [],
+      "sfx": [],
+      "visual_notes": [
+        "MC snaps awake and pins the knife wrist to the mud—fast, silent, brutal.",
+        "Protector reflex leaks through."
+      ],
+      "continuity_flags": [
+        "show_protector_leak"
+      ]
+    },
+    {
+      "panel_id": 13,
+      "scene": "C_SCAVENGERS",
+      "shot": "close",
+      "location": "mass_grave",
+      "characters": [
+        "SCAVENGER_1"
+      ],
+      "dialogue": [
+        {
+          "speaker": "SCAVENGER_1",
+          "text": "Okay—so you’re… awake awake."
+        }
+      ],
+      "sfx": [],
+      "visual_notes": [
+        "Scavenger terrified; nervous humor breaks tension."
+      ]
+    },
+    {
+      "panel_id": 14,
+      "scene": "C_SCAVENGERS",
+      "shot": "medium",
+      "location": "mass_grave",
+      "characters": [
+        "MC",
+        "SCAVENGER_1"
+      ],
+      "dialogue": [
+        {
+          "speaker": "MC",
+          "text": "How many are still breathing?"
+        },
+        {
+          "speaker": "SCAVENGER_1",
+          "text": "Breathing? Not many. Dying? Plenty."
+        }
+      ],
+      "sfx": [],
+      "visual_notes": [
+        "MC releases slowly, voice low—calculation not panic."
+      ]
+    },
+    {
+      "panel_id": 15,
+      "scene": "C_SCAVENGERS",
+      "shot": "medium",
+      "location": "mass_grave",
+      "characters": [
+        "MC",
+        "WOUNDED"
+      ],
+      "dialogue": [
+        {
+          "speaker": "MC_THOUGHT",
+          "text": "Idiot."
+        }
+      ],
+      "sfx": [],
+      "visual_notes": [
+        "MC presses cloth to the wounded body's bleeding spot—small mercy, immediately regretted."
+      ]
+    },
+    {
+      "panel_id": 16,
+      "scene": "D_TRIAGE",
+      "shot": "wide_establisher",
+      "location": "village_outskirts_triage",
+      "characters": [
+        "MC",
+        "SCAVENGER_1",
+        "MEDIC",
+        "GUARDS",
+        "VILLAGERS_BG"
+      ],
+      "dialogue": [],
+      "sfx": [],
+      "visual_notes": [
+        "Dragged to triage tents: stretchers, crying, carts of bodies, guarded gate line.",
+        "Villagers stare like he’s a curse."
+      ]
+    },
+    {
+      "panel_id": 17,
+      "scene": "D_TRIAGE",
+      "shot": "whisper_fragments",
+      "location": "triage",
+      "characters": [
+        "VILLAGERS_BG",
+        "GUARD_BG",
+        "MEDIC_BG"
+      ],
+      "dialogue": [
+        {
+          "speaker": "WHISPER",
+          "text": "From the field…"
+        },
+        {
+          "speaker": "WHISPER",
+          "text": "Two foreign banners."
+        },
+        {
+          "speaker": "WHISPER",
+          "text": "The sky burned—judgment."
+        }
+      ],
+      "sfx": [],
+      "visual_notes": [
+        "Worldbuilding via gossip fragments only; no lore lecture."
+      ]
+    },
+    {
+      "panel_id": 18,
+      "scene": "D_TRIAGE",
+      "shot": "close",
+      "location": "triage",
+      "characters": [
+        "MEDIC",
+        "MC"
+      ],
+      "dialogue": [
+        {
+          "speaker": "MEDIC",
+          "text": "Fever?"
+        },
+        {
+          "speaker": "MC",
+          "text": "Infection."
+        },
+        {
+          "speaker": "MEDIC",
+          "text": "Mm."
+        }
+      ],
+      "sfx": [],
+      "visual_notes": [
+        "Medic glimpses the rash-like Mark briefly; MC instinctively lies to stay unseen.",
+        "Mark remains subtle."
+      ],
+      "continuity_flags": [
+        "mc_hustler_mask"
+      ]
+    },
+    {
+      "panel_id": 19,
+      "scene": "E_THREAT",
+      "shot": "wide",
+      "location": "village_gate",
+      "characters": [
+        "GUARDS",
+        "VILLAGERS_BG"
+      ],
+      "dialogue": [],
+      "sfx": [
+        "BWOOO—"
+      ],
+      "visual_notes": [
+        "Distant horn. Guards snap to attention."
+      ]
+    },
+    {
+      "panel_id": 20,
+      "scene": "E_THREAT",
+      "shot": "ridge_silhouette",
+      "location": "ridge_overlooking_village",
+      "characters": [
+        "SCOUTS_SILHOUETTE"
+      ],
+      "dialogue": [],
+      "sfx": [],
+      "visual_notes": [
+        "On a ridge: scout silhouettes watching; a crest glints briefly."
+      ]
+    },
+    {
+      "panel_id": 21,
+      "scene": "E_THREAT",
+      "shot": "close",
+      "location": "triage",
+      "characters": [
+        "MEDIC",
+        "MC"
+      ],
+      "dialogue": [
+        {
+          "speaker": "MEDIC",
+          "text": "If they find survivors… they make sure there aren’t any."
+        }
+      ],
+      "sfx": [],
+      "visual_notes": [
+        "Medic grips MC’s shoulder—urgent warning."
+      ]
+    },
+    {
+      "panel_id": 22,
+      "scene": "E_THREAT",
+      "shot": "close_insert",
+      "location": "triage",
+      "characters": [
+        "MC"
+      ],
+      "dialogue": [],
+      "sfx": [
+        "THRUM"
+      ],
+      "visual_notes": [
+        "Under sleeve: rash-like Mark warms and pulses subtly, veins darkening a shade.",
+        "Keep it plausible as fever at first glance."
+      ],
+      "continuity_flags": [
+        "mark_reacts_to_threat"
+      ]
+    },
+    {
+      "panel_id": 23,
+      "scene": "E_THREAT",
+      "shot": "final_close",
+      "location": "triage",
+      "characters": [
+        "MC"
+      ],
+      "dialogue": [
+        {
+          "speaker": "MC_THOUGHT",
+          "text": "So I’m not supposed to exist."
+        }
+      ],
+      "sfx": [],
+      "visual_notes": [
+        "Final close-up: MC’s eyes sharpen—survivor calculation. End."
+      ]
+    }
+  ]
+}

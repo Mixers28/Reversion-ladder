@@ -7,7 +7,7 @@ const path_1 = require("path");
 // Load at startup to avoid require() issues with spaces in filenames
 let chapterData = null;
 try {
-    // Load from data.json in src directory
+    // Load from data.json in dist/routes directory (copied by build script)
     const chapterPath = (0, path_1.resolve)(__dirname, './data.json');
     const fileContent = (0, fs_1.readFileSync)(chapterPath, 'utf-8');
     chapterData = JSON.parse(fileContent);
