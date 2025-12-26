@@ -7,7 +7,8 @@ import { supabase } from '../index';
 // Load at startup to avoid require() issues with spaces in filenames
 let chapterData: any = null;
 try {
-  const chapterPath = resolve(__dirname, '../../Reverson Ladder (UPDATED).json');
+  // Load from data.json in src directory
+  const chapterPath = resolve(__dirname, './data.json');
   const fileContent = readFileSync(chapterPath, 'utf-8');
   chapterData = JSON.parse(fileContent);
 } catch (err) {
