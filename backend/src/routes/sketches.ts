@@ -3,23 +3,28 @@ import { Router, Request, Response } from 'express';
 const router = Router();
 
 interface SketchRequest {
-  sketchId: string;
   prompt: string;
-  style: string;
-  mood: string;
+  panel_id?: number;
+  scene?: string;
+  style?: string;
+  mood?: string;
 }
 
 // POST /api/sketches/generate
 router.post('/generate', async (req: Request, res: Response) => {
   try {
-    const { sketchId, prompt, style, mood } = req.body as SketchRequest;
+    const { prompt, panel_id, scene, style = 'cinematic illustration', mood = 'dramatic' } = req.body as SketchRequest;
+
+    if (!prompt) {
+      return res.status(400).json({ error: 'Prompt is required' });
+    }
 
     const fullPrompt = `${prompt}. Style: ${style}. Mood: ${mood}`;
     const imageUrl = `https://image.pollinations.ai/prompt/${encodeURIComponent(fullPrompt)}`;
 
     res.json({
-      sketchId,
-      imageUrl,
+      panel_id,
+      image_url: imageUrl,
       status: 'generating',
       prompt: fullPrompt
     });
