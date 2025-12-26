@@ -16,8 +16,8 @@ app.use(cors({
   origin: [
     'http://localhost:3000',
     'http://localhost:3001',
-    process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : ''
-  ].filter(Boolean)
+    'https://reversion-ladder-wnp6.vercel.app'
+  ]
 }));
 app.use(express.json());
 

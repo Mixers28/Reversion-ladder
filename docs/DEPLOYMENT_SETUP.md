@@ -97,7 +97,7 @@ git push
 
 ### 2.4 Test Backend
 ```bash
-curl https://reversion-api.railway.app/api/health
+curl https://reversion-ladder.up.railway.app/api/health
 # Should return: {"status":"ok","timestamp":"2025-12-25T..."}
 ```
 
