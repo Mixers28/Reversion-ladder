@@ -67,13 +67,15 @@ const ReaderPanel: React.FC<ReaderPanelProps> = ({
     >
       <div className="w-full max-w-xl border-2 border-sigil/40 p-8 bg-void rounded">
         {imageUrl ? (
-          <div className="mb-6 w-full aspect-video relative rounded border border-sigil/30">
+          <div className="mb-6 w-full rounded border border-sigil/30 overflow-hidden">
             <Image
               src={imageUrl}
               alt={`Panel ${panelData.panel_id}: ${panelData.scene}`}
-              fill
-              className="object-cover rounded"
+              width={600}
+              height={400}
+              className="w-full h-auto object-cover"
               priority
+              unoptimized
             />
           </div>
         ) : loading ? (
