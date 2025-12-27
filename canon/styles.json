@@ -1,0 +1,44 @@
+[
+  {
+    "id": "grave_black_ink",
+    "name": "Grave-Black Ink (Noir Manhwa)",
+    "best_for": "Chapter 1–3 mass grave, triage, dread",
+    "prompt_prefix": "Vertical webtoon panel, gritty noir manhwa ink style, high-contrast shadows, realistic anatomy, cinematic lighting, muddy battlefield atmosphere, subtle film grain texture, textured blacks, dramatic negative space, no text, no watermark.",
+    "negative_prompt": "Avoid: bright pastel palette, chibi proportions, glossy anime highlights, comedic caricature, over-clean line art, heavy gore closeups, text overlays, watermarks, logos."
+  },
+  {
+    "id": "storyboard_sketch",
+    "name": "Storyboard Sketch (Fast Iteration)",
+    "best_for": "Blocking shots, pacing, fast panel iteration",
+    "prompt_prefix": "Vertical webtoon storyboard sketch, loose pencil + rough ink, simple shading, clear silhouettes, readable staging, minimal detail, no text, no watermark.",
+    "negative_prompt": "Avoid: polished rendering, color grading, detailed textures, text overlays, watermarks."
+  },
+  {
+    "id": "clean_manhwa_shade",
+    "name": "Clean Manhwa Shading (Readable Action)",
+    "best_for": "Combat clarity, training scenes, movement",
+    "prompt_prefix": "Vertical webtoon panel, clean manhwa line art, soft cel shading, crisp silhouettes, clear action readability, controlled contrast, no text, no watermark.",
+    "negative_prompt": "Avoid: muddy lighting, extreme grain, chibi, heavy gore, text overlays."
+  },
+  {
+    "id": "fog_horror",
+    "name": "Fog Horror (Implied Dread)",
+    "best_for": "Mass grave horror without explicit gore",
+    "prompt_prefix": "Vertical webtoon panel, horror atmosphere, fog/haze, silhouettes, implied violence, strong negative space, high contrast, realistic anatomy, no text, no watermark.",
+    "negative_prompt": "Avoid: explicit gore closeups, comedic faces, bright colors, text overlays."
+  },
+  {
+    "id": "grit_realism",
+    "name": "Grit Realism (War Trauma)",
+    "best_for": "Warlords, scouts, aftermath, oppression",
+    "prompt_prefix": "Vertical webtoon panel, gritty semi-realistic manhwa style, harsh directional lighting, mud/blood texture, tired faces, grounded war realism, no text, no watermark.",
+    "negative_prompt": "Avoid: glamorized hero lighting, clean costumes, cute expressions, text overlays."
+  },
+  {
+    "id": "mythic_minimal",
+    "name": "Mythic Minimal (Filter Foreshadow)",
+    "best_for": "Symbolic hints, dreams, omen moments",
+    "prompt_prefix": "Vertical webtoon panel, minimal ink illustration, symbolic composition, abstract geometry, subtle border distortion, restrained detail, no text, no watermark.",
+    "negative_prompt": "Avoid: realism detail overload, bright colors, comedic style, text overlays."
+  }
+]

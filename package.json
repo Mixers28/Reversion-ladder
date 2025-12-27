@@ -1,0 +1,29 @@
+{
+  "name": "worthy-webtoon",
+  "version": "0.1.0",
+  "description": "WORTHY: Interactive AI-driven webtoon orchestrator + reader",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "make:chapter": "ts-node src/orchestrator/index.ts",
+    "compile:chapter": "ts-node src/orchestrator/compiler.ts --compile",
+    "validate:chapter": "ts-node src/orchestrator/validators.ts --validate",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "build:frontend": "cd frontend && npm run build",
+    "build:backend": "cd backend && npm run build",
+    "test": "echo 'No tests yet'"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ajv": "^8.12.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "WORTHY Chapter Script Schema",
+  "type": "object",
+  "required": ["chapter_id", "title", "description", "style_id", "panels", "choice_points"],
+  "properties": {
+    "chapter_id": {
+      "type": "string",
+      "pattern": "^ch\\d+_[a-z_]+$",
+      "description": "e.g., ch01_opening"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "description": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 500
+    },
+    "style_id": {
+      "type": "string",
+      "enum": ["grave_black_ink", "storyboard_sketch", "clean_manhwa_shade", "fog_horror", "grit_realism", "mythic_minimal"]
+    },
+    "panels": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["panel_id", "shot", "location", "visual_notes", "characters", "dialogue", "sfx"],
+        "properties": {
+          "panel_id": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "shot": {
+            "type": "string",
+            "enum": ["full_black", "close", "medium", "wide", "insert", "action_close"],
+            "description": "Camera shot type"
+          },
+          "location": {
+            "type": "string",
+            "description": "Scene location (e.g., mass_grave, triage, village_gate)"
+          },
+          "visual_notes": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Visual description for image generation (will be joined)"
+          },
+          "characters": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Characters present in panel"
+          },
+          "dialogue": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["speaker", "text"],
+              "properties": {
+                "speaker": {
+                  "type": "string",
+                  "description": "e.g., MC, SCAVENGER_1, MC_THOUGHT, WHISPER"
+                },
+                "text": {
+                  "type": "string",
+                  "maxLength": 150,
+                  "description": "Dialogue text (recommended < 90 chars for webtoon readability)"
+                }
+              }
+            }
+          },
+          "sfx": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Sound effects (e.g., CRACK, WHOOSH)"
+          },
+          "thought": {
+            "type": ["string", "null"],
+            "description": "MC internal thought (optional)"
+          },
+          "on_panel_text": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Text overlaid on panel (e.g., narration, titles)"
+          },
+          "notes": {
+            "type": ["string", "null"],
+            "description": "Pacing/directional notes (e.g., 'linger', 'snap cut')"
+          }
+        }
+      }
+    },
+    "choice_points": {
+      "type": "array",
+      "description": "Story branch points",
+      "items": {
+        "type": "object",
+        "required": ["panel_id", "question", "choices"],
+        "properties": {
+          "panel_id": {
+            "type": "integer",
+            "description": "Panel where choice appears"
+          },
+          "question": {
+            "type": "string",
+            "maxLength": 150
+          },
+          "choices": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "object",
+              "required": ["text", "leads_to_panel"],
+              "properties": {
+                "text": {
+                  "type": "string",
+                  "maxLength": 100
+                },
+                "leads_to_panel": {
+                  "type": "integer",
+                  "description": "Panel ID this choice leads to"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
