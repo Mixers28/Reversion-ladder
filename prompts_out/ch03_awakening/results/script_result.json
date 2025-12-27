@@ -1,0 +1,396 @@
+{
+  "chapter_id": "ch03_awakening",
+  "title": "Chapter 3: Awakening",
+  "style_id": "grave_black_ink",
+  "panels": [
+    {
+      "panel_id": 1,
+      "shot": "wide",
+      "location": "Village Square at Dawn",
+      "visual_notes": ["Fog rolling in", "Shadows of the Pillars in the background"],
+      "characters": ["MC", "Elder"],
+      "dialogue": [
+        {"speaker": "MC", "text": "What do you know about the Body Pillar?"},
+        {"speaker": "Elder", "text": "More than I can tell you, child."}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 2,
+      "shot": "medium",
+      "location": "Elder's Hut",
+      "visual_notes": ["Ancient scrolls scattered", "Dimly lit room"],
+      "characters": ["MC", "Elder"],
+      "dialogue": [
+        {"speaker": "MC", "text": "I need answers."},
+        {"speaker": "Elder", "text": "The truth is dangerous."}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 3,
+      "shot": "close",
+      "location": "Elder's Hut",
+      "visual_notes": ["Elder's eyes filled with wisdom", "Flickering candlelight"],
+      "characters": ["Elder"],
+      "dialogue": [
+        {"speaker": "Elder", "text": "You must embrace your mark."}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 4,
+      "shot": "action_close",
+      "location": "Village Square",
+      "visual_notes": ["MC clenching fists", "Determined expression"],
+      "characters": ["MC"],
+      "dialogue": [
+        {"speaker": "MC", "text": "I will find my power."}
+      ],
+      "sfx": ["fist_clench"]
+    },
+    {
+      "panel_id": 5,
+      "shot": "medium",
+      "location": "Training Grounds",
+      "visual_notes": ["Rival practicing with a sword", "Dust flying around"],
+      "characters": ["Rival"],
+      "dialogue": [
+        {"speaker": "Rival", "text": "I won't let anyone stand in my way."}
+      ],
+      "sfx": ["sword_swish"]
+    },
+    {
+      "panel_id": 6,
+      "shot": "wide",
+      "location": "Village Gates",
+      "visual_notes": ["Guard Captain observing outsiders", "Tense atmosphere"],
+      "characters": ["GUARD_CAPTAIN"],
+      "dialogue": [
+        {"speaker": "GUARD_CAPTAIN", "text": "Keep an eye on them."}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 7,
+      "shot": "medium",
+      "location": "Market Area",
+      "visual_notes": ["Merchant setting up stall", "Colorful goods displayed"],
+      "characters": ["MERCHANT"],
+      "dialogue": [
+        {"speaker": "MERCHANT", "text": "News from beyond the mountains!"}
+      ],
+      "sfx": ["market_buzz"]
+    },
+    {
+      "panel_id": 8,
+      "shot": "close",
+      "location": "Market Area",
+      "visual_notes": ["MC listening intently", "Eyes wide with curiosity"],
+      "characters": ["MC"],
+      "dialogue": [
+        {"speaker": "MC", "text": "What news?"}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 9,
+      "shot": "medium",
+      "location": "Market Area",
+      "visual_notes": ["Merchant leaning closer", "Whispering"],
+      "characters": ["MERCHANT"],
+      "dialogue": [
+        {"speaker": "MERCHANT", "text": "There are whispers of a new power."}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 10,
+      "shot": "wide",
+      "location": "Village Square",
+      "visual_notes": ["Villagers gathering", "Tension rising"],
+      "characters": ["MC", "Rival", "GUARD_CAPTAIN"],
+      "dialogue": [
+        {"speaker": "Rival", "text": "You think you can challenge me?"},
+        {"speaker": "MC", "text": "I will prove it."}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 11,
+      "shot": "close",
+      "location": "Village Square",
+      "visual_notes": ["Rival's fierce glare", "Determination evident"],
+      "characters": ["Rival"],
+      "dialogue": [
+        {"speaker": "Rival", "text": "Prepare yourself."}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 12,
+      "shot": "action_close",
+      "location": "Training Grounds",
+      "visual_notes": ["MC training with sticks", "Sweat dripping"],
+      "characters": ["MC"],
+      "dialogue": [
+        {"speaker": "MC", "text": "I won't back down."}
+      ],
+      "sfx": ["stick_clash"]
+    },
+    {
+      "panel_id": 13,
+      "shot": "medium",
+      "location": "Training Grounds",
+      "visual_notes": ["Elder watching from a distance", "Concerned expression"],
+      "characters": ["Elder"],
+      "dialogue": [
+        {"speaker": "Elder", "text": "The mark will awaken soon."}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 14,
+      "shot": "close",
+      "location": "Training Grounds",
+      "visual_notes": ["MC's hand glowing faintly", "Surprised expression"],
+      "characters": ["MC"],
+      "dialogue": [
+        {"speaker": "MC", "text": "What is happening?"}
+      ],
+      "sfx": ["glow"]
+    },
+    {
+      "panel_id": 15,
+      "shot": "medium",
+      "location": "Elder's Hut",
+      "visual_notes": ["Elder studying MC's hand", "Ancient symbols glowing"],
+      "characters": ["Elder", "MC"],
+      "dialogue": [
+        {"speaker": "Elder", "text": "The mark is responding."},
+        {"speaker": "MC", "text": "What does it mean?"}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 16,
+      "shot": "wide",
+      "location": "Village Square",
+      "visual_notes": ["Crowd murmuring", "Tension building"],
+      "characters": ["GUARD_CAPTAIN", "MC", "Rival"],
+      "dialogue": [
+        {"speaker": "GUARD_CAPTAIN", "text": "This ends now."},
+        {"speaker": "Rival", "text": "Let the challenge begin."}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 17,
+      "shot": "close",
+      "location": "Village Square",
+      "visual_notes": ["MC's determined face", "Nervous sweat"],
+      "characters": ["MC"],
+      "dialogue": [
+        {"speaker": "MC", "text": "I will not lose."}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 18,
+      "shot": "action_close",
+      "location": "Training Grounds",
+      "visual_notes": ["Rival charging at MC", "Dust flying"],
+      "characters": ["Rival", "MC"],
+      "dialogue": [
+        {"speaker": "Rival", "text": "Prepare for defeat!"}
+      ],
+      "sfx": ["charge"]
+    },
+    {
+      "panel_id": 19,
+      "shot": "medium",
+      "location": "Training Grounds",
+      "visual_notes": ["MC dodging swiftly", "Rival's blade missing"],
+      "characters": ["MC"],
+      "dialogue": [
+        {"speaker": "MC", "text": "You’ll have to be faster!"}
+      ],
+      "sfx": ["whoosh"]
+    },
+    {
+      "panel_id": 20,
+      "shot": "close",
+      "location": "Training Grounds",
+      "visual_notes": ["Rival's frustration", "Eyes narrowing"],
+      "characters": ["Rival"],
+      "dialogue": [
+        {"speaker": "Rival", "text": "This isn't over!"}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 21,
+      "shot": "medium",
+      "location": "Training Grounds",
+      "visual_notes": ["MC's hand glowing brighter", "Energy building"],
+      "characters": ["MC"],
+      "dialogue": [
+        {"speaker": "MC", "text": "I can feel it!"}
+      ],
+      "sfx": ["energy_build"]
+    },
+    {
+      "panel_id": 22,
+      "shot": "wide",
+      "location": "Training Grounds",
+      "visual_notes": ["Crowd cheering", "Intensity rising"],
+      "characters": ["Villagers", "GUARD_CAPTAIN"],
+      "dialogue": [
+        {"speaker": "GUARD_CAPTAIN", "text": "This is it!"}
+      ],
+      "sfx": ["crowd_cheer"]
+    },
+    {
+      "panel_id": 23,
+      "shot": "action_close",
+      "location": "Training Grounds",
+      "visual_notes": ["MC unleashing energy", "Rival stunned"],
+      "characters": ["MC", "Rival"],
+      "dialogue": [
+        {"speaker": "MC", "text": "Feel my power!"}
+      ],
+      "sfx": ["explosion"]
+    },
+    {
+      "panel_id": 24,
+      "shot": "medium",
+      "location": "Training Grounds",
+      "visual_notes": ["Rival knocked back", "Shock on his face"],
+      "characters": ["Rival"],
+      "dialogue": [
+        {"speaker": "Rival", "text": "What is this power?"}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 25,
+      "shot": "close",
+      "location": "Training Grounds",
+      "visual_notes": ["MC's expression of triumph", "Breathing heavily"],
+      "characters": ["MC"],
+      "dialogue": [
+        {"speaker": "MC", "text": "I am worthy!"}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 26,
+      "shot": "medium",
+      "location": "Training Grounds",
+      "visual_notes": ["Crowd erupting in cheers", "Joyful expressions"],
+      "characters": ["Villagers"],
+      "dialogue": [
+        {"speaker": "Villagers", "text": "Hail the new champion!"}
+      ],
+      "sfx": ["cheering"]
+    },
+    {
+      "panel_id": 27,
+      "shot": "wide",
+      "location": "Training Grounds",
+      "visual_notes": ["Elder watching with pride", "Nods approvingly"],
+      "characters": ["Elder"],
+      "dialogue": [
+        {"speaker": "Elder", "text": "You have awakened your true self."}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 28,
+      "shot": "medium",
+      "location": "Training Grounds",
+      "visual_notes": ["Rival looking defeated", "Resentful glare"],
+      "characters": ["Rival"],
+      "dialogue": [
+        {"speaker": "Rival", "text": "This isn't the end."}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 29,
+      "shot": "close",
+      "location": "Training Grounds",
+      "visual_notes": ["MC's determined face", "Ready for the next challenge"],
+      "characters": ["MC"],
+      "dialogue": [
+        {"speaker": "MC", "text": "I will protect my village."}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 30,
+      "shot": "medium",
+      "location": "Elder's Hut",
+      "visual_notes": ["Elder handing MC an ancient artifact", "Glowing energy"],
+      "characters": ["Elder", "MC"],
+      "dialogue": [
+        {"speaker": "Elder", "text": "This will aid you on your journey."}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 31,
+      "shot": "wide",
+      "location": "Village Square",
+      "visual_notes": ["Villagers celebrating", "Fireworks in the sky"],
+      "characters": ["Villagers"],
+      "dialogue": [
+        {"speaker": "Villagers", "text": "Celebrate our hero!"}
+      ],
+      "sfx": ["fireworks"]
+    },
+    {
+      "panel_id": 32,
+      "shot": "medium",
+      "location": "Village Square",
+      "visual_notes": ["MC standing tall", "Proud expression"],
+      "characters": ["MC"],
+      "dialogue": [
+        {"speaker": "MC", "text": "I will not let you down."}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 33,
+      "shot": "close",
+      "location": "Elder's Hut",
+      "visual_notes": ["Elder's knowing smile", "Wisdom in her eyes"],
+      "characters": ["Elder"],
+      "dialogue": [
+        {"speaker": "Elder", "text": "The journey has just begun."}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 34,
+      "shot": "medium",
+      "location": "Village Square",
+      "visual_notes": ["MC looking determined", "Crowd cheering"],
+      "characters": ["MC"],
+      "dialogue": [
+        {"speaker": "MC", "text": "I am ready for whatever comes next!"}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 35,
+      "shot": "full_black",
+      "location": "",
+      "visual_notes": ["Silence before the storm", "Tension palpable"],
+      "characters": [],
+      "dialogue": [],
+      "sfx": []
+    }
+  ],
+  "choice_points": []
+}

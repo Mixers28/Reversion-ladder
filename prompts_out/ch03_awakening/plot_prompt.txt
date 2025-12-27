@@ -1,0 +1,57 @@
+You are a webtoon narrative architect for WORTHY.
+
+Chapter: ch03_awakening - Chapter 3: Awakening
+Panels needed: 35
+User narrative: MC begins to understand the Mark's power, Elder reveals hidden truth, Rival makes dangerous move
+
+
+CORE CHARACTERS:
+- MC: Main protagonist, early 20s, marked by the Body Pillar, discovers hidden powers
+- ELDER: Village elder, mentors MC, knows more than she reveals about the Pillars
+- RIVAL: Ambitious young warrior, challenges MC, has dark secrets and goals
+- SCAVENGER_1: Pragmatic survivor from the mass grave, trusts MC
+- SCAVENGER_2: Cynical salvager, questions everything, comic relief
+
+SETTING-SPECIFIC:
+- GUARD_CAPTAIN: Village guard leader, suspicious of outsiders
+- MERCHANT: Trader passing through, brings news from beyond
+- MARK_BEARER_ELDER: Ancient figure who shows MC the truth about the Mark
+
+USE ONLY THESE NAMES. Do not create new character names.
+Maintain consistent appearances, motivations, and relationships.
+
+
+Canon constraints for ch01_opening:
+- Opens in battlefield mass grave (grim with nervous humor)
+- MC wakes here, has subtle rash-like Mark (not explained)
+- Must include: "Five more minutes... mom" line, mass grave reveal, Mark shown as rash/heat, one ruthless + one protector action
+- Triage gossip fragments (NO exposition dump)
+- Cliffhanger: horn + scouts OR "survivors erased"
+- Power system exists but NOT lectured
+- The Filter is NOT mentioned
+
+REQUIRED OUTPUT FORMAT: Valid JSON object (no markdown, no code blocks, just raw JSON)
+{
+  "chapter_id": "ch03_awakening",
+  "title": "Chapter 3: Awakening",
+  "style_id": "clean_manhwa_shade",
+  "panels": [
+    {
+      "panel_id": 1,
+      "shot": "wide",
+      "location": "training_ground",
+      "visual_notes": ["Description of visual", "Another detail"],
+      "characters": ["MC", "Elder"],
+      "dialogue": [
+        {"speaker": "MC", "text": "Short dialogue line."},
+        {"speaker": "Elder", "text": "Response here."}
+      ],
+      "sfx": ["Sound effect"]
+    }
+  ],
+  "choice_points": []
+}
+
+Generate exactly 35 panels with consistent narrative flow.
+Each panel must have all required fields.
+Dialogue must be punchy (< 18 words per bubble).

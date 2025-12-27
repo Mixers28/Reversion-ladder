@@ -5,6 +5,7 @@ import { createClient } from '@supabase/supabase-js';
 import chaptersRouter from './routes/chapters';
 import choicesRouter from './routes/choices';
 import sketchesRouter from './routes/sketches';
+import adminRouter from './routes/admin';
 
 dotenv.config();
 
@@ -19,7 +20,7 @@ app.use(cors({
     'https://reversion-ladder-wnp6.vercel.app'
   ]
 }));
-app.use(express.json());
+app.use(express.json({ limit: '10mb' }));
 
 // Initialize Supabase client
 export const supabase = createClient(
@@ -31,6 +32,7 @@ export const supabase = createClient(
 app.use('/api/chapters', chaptersRouter);
 app.use('/api/choices', choicesRouter);
 app.use('/api/sketches', sketchesRouter);
+app.use('/api/admin', adminRouter);
 
 // Health check
 app.get('/api/health', (req, res) => {

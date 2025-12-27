@@ -1,0 +1,32 @@
+[
+  {
+    "panel_id": 1,
+    "shot": "wide",
+    "location": "mass_grave",
+    "prompt": "Vertical webtoon panel, gritty noir manhwa ink style, high-contrast shadows, realistic anatomy, cinematic lighting, muddy battlefield atmosphere, subtle film grain texture, textured blacks, dramatic negative space, no text, no watermark. The scene depicts a mass grave with rows of bodies partially covered in mud. The main character stands in the foreground, early-20s, lean, mud-streaked, with tired eyes and a torn cloth wrap, looking somberly at the grave. The mood is grim with a hint of nervous humor reflected in the expressions of soldiers in the background, who cast hostile stares. Smoky haze on the horizon and flies buzzing add to the atmosphere."
+  },
+  {
+    "panel_id": 2,
+    "shot": "medium",
+    "location": "triage_tents",
+    "prompt": "Vertical webtoon panel, gritty noir manhwa ink style, high-contrast shadows, realistic anatomy, cinematic lighting, muddy battlefield atmosphere, subtle film grain texture, textured blacks, dramatic negative space, no text, no watermark. The scene focuses on a triage tent filled with wounded soldiers. The main character crouches near a soldier being treated, showing concern mixed with exhaustion on his face. The lighting is dim, with shadows cast by the tent fabric, and the mood is heavy with tension, while a side character offers a nervous smile, attempting to lighten the moment."
+  },
+  {
+    "panel_id": 3,
+    "shot": "close",
+    "location": "muddy_terrain",
+    "prompt": "Vertical webtoon panel, gritty noir manhwa ink style, high-contrast shadows, realistic anatomy, cinematic lighting, muddy battlefield atmosphere, subtle film grain texture, textured blacks, dramatic negative space, no text, no watermark. The focus is on the main character's forearm, showing the faint rash-like branching ring marked on his skin, with subtle redness around it. The background is blurred, suggesting a chaotic battlefield filled with distant sounds of conflict. The mood conveys a sense of urgency, with a faint pulse of heat hinted at by the lighting."
+  },
+  {
+    "panel_id": 4,
+    "shot": "action_close",
+    "location": "battlefield_edge",
+    "prompt": "Vertical webtoon panel, gritty noir manhwa ink style, high-contrast shadows, realistic anatomy, cinematic lighting, muddy battlefield atmosphere, subtle film grain texture, textured blacks, dramatic negative space, no text, no watermark. The main character is depicted in a dynamic pose, dodging an unseen threat at the edge of the battlefield. His expression is one of determination tinged with fatigue. The lighting highlights the mud splattering around him, and the tension is palpable, with side characters in the background sharing nervous glances."
+  },
+  {
+    "panel_id": 5,
+    "shot": "insert",
+    "location": "combat_area",
+    "prompt": "Vertical webtoon panel, gritty noir manhwa ink style, high-contrast shadows, realistic anatomy, cinematic lighting, muddy battlefield atmosphere, subtle film grain texture, textured blacks, dramatic negative space, no text, no watermark. This close-up captures a soldier's hand gripping a weapon, mud caked under the fingernails. The main character's faint rash-like mark is visible on the forearm as the camera zooms in. The atmosphere is tense, with the sounds of distant horns echoing, and a side character's anxious expression peeks into the frame."
+  }
+]

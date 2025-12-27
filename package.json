@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
+    "@types/node-fetch": "^2.6.13",
     "ajv": "^8.12.0",
     "ts-node": "^10.9.0",
     "typescript": "^5.0.0"
@@ -28,6 +29,7 @@
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.71.2",
+    "node-fetch": "^2.7.0",
     "openai": "^6.15.0"
   }
 }

@@ -1,0 +1,401 @@
+{
+  "chapter_id": "ch03_awakening",
+  "title": "Chapter 3: Awakening",
+  "style_id": "clean_manhwa_shade",
+  "panels": [
+    {
+      "panel_id": 1,
+      "shot": "wide",
+      "location": "training_ground",
+      "visual_notes": ["Sunrise casts an orange hue over the training ground.", "MC practices basic forms clumsily."],
+      "characters": ["MC", "Elder"],
+      "dialogue": [
+        {"speaker": "MC", "text": "I can feel something stirring inside me."},
+        {"speaker": "Elder", "text": "The Mark awakens your true potential."}
+      ],
+      "sfx": ["Soft rustling of leaves"]
+    },
+    {
+      "panel_id": 2,
+      "shot": "medium",
+      "location": "training_ground",
+      "visual_notes": ["MC's skin glows faintly where the Mark is.", "Elder watches with a knowing gaze."],
+      "characters": ["MC", "Elder"],
+      "dialogue": [
+        {"speaker": "MC", "text": "What does it mean?"},
+        {"speaker": "Elder", "text": "It's a blessing and a burden."}
+      ],
+      "sfx": ["Glow intensifies"]
+    },
+    {
+      "panel_id": 3,
+      "shot": "close-up",
+      "location": "training_ground",
+      "visual_notes": ["MC's hand hovering over the Mark.", "A spark of energy flickers."],
+      "characters": ["MC"],
+      "dialogue": [
+        {"speaker": "MC", "text": "I can harness it... somehow."}
+      ],
+      "sfx": ["Zing!"]
+    },
+    {
+      "panel_id": 4,
+      "shot": "medium",
+      "location": "training_ground",
+      "visual_notes": ["Elder steps closer, concern in her eyes.", "MC stands tall, determination growing."],
+      "characters": ["Elder", "MC"],
+      "dialogue": [
+        {"speaker": "Elder", "text": "But power comes at a cost."},
+        {"speaker": "MC", "text": "I’m ready to pay it."}
+      ],
+      "sfx": ["Wind picks up"]
+    },
+    {
+      "panel_id": 5,
+      "shot": "wide",
+      "location": "training_ground",
+      "visual_notes": ["Rival watches from a distance, arms crossed.", "Tension builds in the atmosphere."],
+      "characters": ["Rival"],
+      "dialogue": [
+        {"speaker": "Rival", "text": "Think you can handle it, MC?"}
+      ],
+      "sfx": ["Quiet laughter"]
+    },
+    {
+      "panel_id": 6,
+      "shot": "medium",
+      "location": "training_ground",
+      "visual_notes": ["MC turns to face Rival, fire in their eyes.", "Elder steps back, sensing the conflict."],
+      "characters": ["MC", "Rival", "Elder"],
+      "dialogue": [
+        {"speaker": "MC", "text": "I’ll prove it to you."},
+        {"speaker": "Rival", "text": "Let’s see what you’ve got!"}
+      ],
+      "sfx": ["Footsteps approaching"]
+    },
+    {
+      "panel_id": 7,
+      "shot": "close-up",
+      "location": "training_ground",
+      "visual_notes": ["MC's face shows determination.", "A slight glow emanates from the Mark."],
+      "characters": ["MC"],
+      "dialogue": [
+        {"speaker": "MC", "text": "Awaken!"},
+        {"speaker": "Elder", "text": "Focus!"}
+      ],
+      "sfx": ["Energy surge"]
+    },
+    {
+      "panel_id": 8,
+      "shot": "wide",
+      "location": "training_ground",
+      "visual_notes": ["MC unleashes a wave of energy, sending dust flying.", "Rival is momentarily taken aback."],
+      "characters": ["MC", "Rival"],
+      "dialogue": [
+        {"speaker": "Rival", "text": "Impressive!"}
+      ],
+      "sfx": ["Boom!"]
+    },
+    {
+      "panel_id": 9,
+      "shot": "medium",
+      "location": "training_ground",
+      "visual_notes": ["Energy crackles around MC, showcasing newfound power.", "Elder claps slowly."],
+      "characters": ["Elder", "MC"],
+      "dialogue": [
+        {"speaker": "Elder", "text": "You've taken the first step."},
+        {"speaker": "MC", "text": "What’s next?"}
+      ],
+      "sfx": ["Crackling energy"]
+    },
+    {
+      "panel_id": 10,
+      "shot": "close-up",
+      "location": "training_ground",
+      "visual_notes": ["Elder's expression shifts to seriousness.", "Shadow looms behind her."],
+      "characters": ["Elder"],
+      "dialogue": [
+        {"speaker": "Elder", "text": "But beware, the Mark draws attention."}
+      ],
+      "sfx": ["Distant rumble"]
+    },
+    {
+      "panel_id": 11,
+      "shot": "wide",
+      "location": "training_ground",
+      "visual_notes": ["A dark figure lurks in the background, unseen.", "MC and Elder are unaware."],
+      "characters": ["MC", "Elder", "Rival"],
+      "dialogue": [
+        {"speaker": "Rival", "text": "What's that supposed to mean?"}
+      ],
+      "sfx": ["Sinister whispering"]
+    },
+    {
+      "panel_id": 12,
+      "shot": "medium",
+      "location": "village_square",
+      "visual_notes": ["The villagers gather, gossiping, eyes on MC.", "Merchant's arrival creates buzz."],
+      "characters": ["Merchant", "Villagers"],
+      "dialogue": [
+        {"speaker": "Merchant", "text": "News from beyond the borders!"}
+      ],
+      "sfx": ["Murmurs of interest"]
+    },
+    {
+      "panel_id": 13,
+      "shot": "close-up",
+      "location": "village_square",
+      "visual_notes": ["MC looks intrigued, leaning in to listen.", "Elder stands protectively beside MC."],
+      "characters": ["MC", "Elder"],
+      "dialogue": [
+        {"speaker": "MC", "text": "What did you find out?"}
+      ],
+      "sfx": ["Tension in the air"]
+    },
+    {
+      "panel_id": 14,
+      "shot": "medium",
+      "location": "village_square",
+      "visual_notes": ["Merchant gestures animatedly, captivating the crowd.", "Elder frowns, sensing danger."],
+      "characters": ["Merchant", "Elder"],
+      "dialogue": [
+        {"speaker": "Merchant", "text": "A new threat is rising!"}
+      ],
+      "sfx": ["Gasps from the crowd"]
+    },
+    {
+      "panel_id": 15,
+      "shot": "wide",
+      "location": "village_square",
+      "visual_notes": ["Crowd murmurs anxiously, some looking at MC.", "MC's face reflects determination."],
+      "characters": ["MC", "Villagers"],
+      "dialogue": [
+        {"speaker": "MC", "text": "I’ll protect this village!"}
+      ],
+      "sfx": ["Rising chatter"]
+    },
+    {
+      "panel_id": 16,
+      "shot": "medium",
+      "location": "village_square",
+      "visual_notes": ["Elder places a hand on MC’s shoulder.", "A sense of pride in her eyes."],
+      "characters": ["Elder", "MC"],
+      "dialogue": [
+        {"speaker": "Elder", "text": "You carry the Mark, it's your fate."}
+      ],
+      "sfx": ["Heartbeat sound"]
+    },
+    {
+      "panel_id": 17,
+      "shot": "close-up",
+      "location": "village_square",
+      "visual_notes": ["Rival sneers from the back, plotting.", "A glint of malice in his eyes."],
+      "characters": ["Rival"],
+      "dialogue": [
+        {"speaker": "Rival", "text": "Let’s see how far you’ll go."}
+      ],
+      "sfx": ["Creaking laughter"]
+    },
+    {
+      "panel_id": 18,
+      "shot": "medium",
+      "location": "village_square",
+      "visual_notes": ["Scavenger_1 stands near MC, supportive.", "Scavenger_2 rolls eyes, skeptical."],
+      "characters": ["Scavenger_1", "Scavenger_2"],
+      "dialogue": [
+        {"speaker": "Scavenger_1", "text": "You can do this."},
+        {"speaker": "Scavenger_2", "text": "Yeah, if you don’t explode."}
+      ],
+      "sfx": ["Light banter"]
+    },
+    {
+      "panel_id": 19,
+      "shot": "wide",
+      "location": "village_square",
+      "visual_notes": ["MC steps forward, eyes fierce.", "Villagers look expectantly."],
+      "characters": ["MC"],
+      "dialogue": [
+        {"speaker": "MC", "text": "I won't let you down!"}
+      ],
+      "sfx": ["Cheers from villagers"]
+    },
+    {
+      "panel_id": 20,
+      "shot": "medium",
+      "location": "village_square",
+      "visual_notes": ["Rival clenches fists, anger boiling.", "Elder notices his tension."],
+      "characters": ["Rival", "Elder"],
+      "dialogue": [
+        {"speaker": "Elder", "text": "Don’t let jealousy consume you."}
+      ],
+      "sfx": ["Tension crackles"]
+    },
+    {
+      "panel_id": 21,
+      "shot": "close-up",
+      "location": "village_square",
+      "visual_notes": ["Rival smirks, plotting something darker.", "A shadow passes over his face."],
+      "characters": ["Rival"],
+      "dialogue": [
+        {"speaker": "Rival", "text": "We’ll see who’s truly worthy."}
+      ],
+      "sfx": ["Sinister laughter"]
+    },
+    {
+      "panel_id": 22,
+      "shot": "wide",
+      "location": "forest_edge",
+      "visual_notes": ["MC stands at the forest edge, looking determined.", "Elder watches from behind."],
+      "characters": ["MC", "Elder"],
+      "dialogue": [
+        {"speaker": "MC", "text": "I have to explore this power."},
+        {"speaker": "Elder", "text": "Be cautious."}
+      ],
+      "sfx": ["Crickets chirping"]
+    },
+    {
+      "panel_id": 23,
+      "shot": "medium",
+      "location": "forest_edge",
+      "visual_notes": ["MC takes a deep breath, stepping into the forest.", "Branches loom overhead."],
+      "characters": ["MC"],
+      "dialogue": [
+        {"speaker": "MC", "text": "Let’s see what I can truly do."}
+      ],
+      "sfx": ["Branches snapping"]
+    },
+    {
+      "panel_id": 24,
+      "shot": "close-up",
+      "location": "forest",
+      "visual_notes": ["MC’s Mark glows brightly in the darkness.", "Eyes wide with wonder."],
+      "characters": ["MC"],
+      "dialogue": [
+        {"speaker": "MC", "text": "This feels right."}
+      ],
+      "sfx": ["Pulse of energy"]
+    },
+    {
+      "panel_id": 25,
+      "shot": "wide",
+      "location": "forest",
+      "visual_notes": ["MC stands tall, energy swirling around.", "The forest seems alive."],
+      "characters": ["MC"],
+      "dialogue": [
+        {"speaker": "MC", "text": "I can control it!"}
+      ],
+      "sfx": ["Whoosh of energy"]
+    },
+    {
+      "panel_id": 26,
+      "shot": "medium",
+      "location": "forest",
+      "visual_notes": ["A shadowy figure watches MC from behind a tree.", "Eyes glinting with malice."],
+      "characters": ["Rival"],
+      "dialogue": [
+        {"speaker": "Rival", "text": "Let’s test your limits."}
+      ],
+      "sfx": ["Rustle of leaves"]
+    },
+    {
+      "panel_id": 27,
+      "shot": "close-up",
+      "location": "forest",
+      "visual_notes": ["MC’s eyes narrow, sensing danger.", "Mark flickers with energy."],
+      "characters": ["MC"],
+      "dialogue": [
+        {"speaker": "MC", "text": "Who’s there?"}
+      ],
+      "sfx": ["Silence"]
+    },
+    {
+      "panel_id": 28,
+      "shot": "wide",
+      "location": "forest",
+      "visual_notes": ["Rival steps out, smirking, ready to attack.", "Tension thick in the air."],
+      "characters": ["MC", "Rival"],
+      "dialogue": [
+        {"speaker": "Rival", "text": "Ready for a challenge?"}
+      ],
+      "sfx": ["Crack of thunder"]
+    },
+    {
+      "panel_id": 29,
+      "shot": "medium",
+      "location": "forest",
+      "visual_notes": ["MC braces for impact, determination on their face.", "Mark glows fiercely."],
+      "characters": ["MC"],
+      "dialogue": [
+        {"speaker": "MC", "text": "Bring it on!"}
+      ],
+      "sfx": ["Energy crackles"]
+    },
+    {
+      "panel_id": 30,
+      "shot": "close-up",
+      "location": "forest",
+      "visual_notes": ["Rival lunges forward, dark energy swirling around him.", "MC’s eyes widen."],
+      "characters": ["Rival"],
+      "dialogue": [
+        {"speaker": "Rival", "text": "Let’s end this!"}
+      ],
+      "sfx": ["Rush of wind"]
+    },
+    {
+      "panel_id": 31,
+      "shot": "wide",
+      "location": "forest",
+      "visual_notes": ["MC prepares to counter, energy gathering.", "The ground trembles beneath."],
+      "characters": ["MC"],
+      "dialogue": [
+        {"speaker": "MC", "text": "I won’t back down!"}
+      ],
+      "sfx": ["Ground shaking"]
+    },
+    {
+      "panel_id": 32,
+      "shot": "medium",
+      "location": "forest",
+      "visual_notes": ["Energy collides between them, creating a shockwave.", "Trees sway violently."],
+      "characters": ["MC", "Rival"],
+      "dialogue": [
+        {"speaker": "MC", "text": "This is just the beginning!"}
+      ],
+      "sfx": ["Boom!"]
+    },
+    {
+      "panel_id": 33,
+      "shot": "close-up",
+      "location": "forest",
+      "visual_notes": ["Rival’s face twisted in anger, dark energy surging.", "MC’s Mark radiates power."],
+      "characters": ["Rival"],
+      "dialogue": [
+        {"speaker": "Rival", "text": "You’ll regret this!"}
+      ],
+      "sfx": ["Pulse of tension"]
+    },
+    {
+      "panel_id": 34,
+      "shot": "wide",
+      "location": "forest",
+      "visual_notes": ["The battle intensifies, both characters locked in struggle.", "A bright flash of light."],
+      "characters": ["MC", "Rival"],
+      "dialogue": [
+        {"speaker": "MC", "text": "I’ll prove myself!"}
+      ],
+      "sfx": ["Surge of energy"]
+    },
+    {
+      "panel_id": 35,
+      "shot": "medium",
+      "location": "forest",
+      "visual_notes": ["The scene freezes, tension palpable, as both characters prepare for the next moment.", "The forest holds its breath."],
+      "characters": ["MC", "Rival"],
+      "dialogue": [
+        {"speaker": "Rival", "text": "Let’s see who’s truly worthy!"}
+      ],
+      "sfx": ["Silence before the storm"]
+    }
+  ],
+  "choice_points": []
+}

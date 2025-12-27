@@ -13,6 +13,24 @@ Tone: grim tension with subtle nervous humor in side character expressions only.
 Mark detail: faint rash-like branching ring on forearm; subtle redness; only faint pulse/heat cue.
 `;
 
+const CHARACTER_ROSTER = `
+CORE CHARACTERS:
+- MC: Main protagonist, early 20s, marked by the Body Pillar, discovers hidden powers
+- ELDER: Village elder, mentors MC, knows more than she reveals about the Pillars
+- RIVAL: Ambitious young warrior, challenges MC, has dark secrets and goals
+- SCAVENGER_1: Pragmatic survivor from the mass grave, trusts MC
+- SCAVENGER_2: Cynical salvager, questions everything, comic relief
+
+SETTING-SPECIFIC:
+- GUARD_CAPTAIN: Village guard leader, suspicious of outsiders
+- MERCHANT: Trader passing through, brings news from beyond
+- MARK_BEARER_ELDER: Ancient figure who shows MC the truth about the Mark
+
+USE ONLY THESE NAMES. Do not create new character names.
+Maintain consistent appearances, motivations, and relationships.
+`;
+
+
 export interface PromptPack {
   plot_prompt: string;
   script_prompt: string;
@@ -48,6 +66,8 @@ function buildPlotPrompt(chapterId: string, title: string, userNarrative: string
 Chapter: ${chapterId} - ${title}
 Panels needed: ${panelCount}
 User narrative: ${userNarrative}
+
+${CHARACTER_ROSTER}
 
 Canon constraints for ch01_opening:
 - Opens in battlefield mass grave (grim with nervous humor)
@@ -86,6 +106,7 @@ Dialogue must be punchy (< 18 words per bubble).`;
 }
 
 
+
 function buildScriptPrompt(chapterId: string, title: string, styleId: string, panelCount: number): string {
   const style = styles[styleId];
 
@@ -94,6 +115,8 @@ function buildScriptPrompt(chapterId: string, title: string, styleId: string, pa
 Chapter: ${chapterId}
 Style: ${styleId} - ${style.name}
 Expected panels: ${panelCount}
+
+${CHARACTER_ROSTER}
 
 REQUIRED OUTPUT FORMAT: Valid JSON object (no markdown, no code blocks, just raw JSON)
 {
@@ -106,10 +129,10 @@ REQUIRED OUTPUT FORMAT: Valid JSON object (no markdown, no code blocks, just raw
       "shot": "wide",
       "location": "location_name",
       "visual_notes": ["Visual detail 1", "Visual detail 2"],
-      "characters": ["Character 1", "Character 2"],
+      "characters": ["MC", "Elder"],
       "dialogue": [
-        {"speaker": "Character 1", "text": "Punchy dialogue under 18 words."},
-        {"speaker": "Character 2", "text": "Response."}
+        {"speaker": "MC", "text": "Punchy dialogue under 18 words."},
+        {"speaker": "Elder", "text": "Response."}
       ],
       "sfx": ["sound_effect"]
     }
@@ -124,7 +147,7 @@ Rules:
 4. shot values: wide, medium, close, action_close, insert, full_black
 5. Location: descriptive location name
 6. visual_notes: array of 1-3 visual descriptions
-7. characters: array of character names present in panel
+7. characters: array of character names (ONLY from roster above)
 8. sfx: array of sound effects (can be empty)
 
 Generate the complete chapter with consistent narrative flow.`;
@@ -136,11 +159,17 @@ function buildDialoguePrompt(chapterId: string): string {
 
 Chapter: ${chapterId}
 
+${CHARACTER_ROSTER}
+
 Your task:
 1. Review existing panel dialogues
 2. Generate 3 variants for each dialogue bubble (short/natural/punchy)
 3. Flag any bubbles > 18 words as "unreadable in webtoon format"
 4. Recommend final variant based on character voice, pacing, readability
+5. Ensure character voices are distinct and consistent
+
+Use only the characters from the roster above.
+Maintain each character's speech patterns and personality.
 
 Output as markdown with structure:
 ## Panel [ID]

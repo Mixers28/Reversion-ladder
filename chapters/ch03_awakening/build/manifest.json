@@ -1,0 +1,16 @@
+{
+  "chapter_id": "ch03_awakening",
+  "title": "Chapter 3: Awakening",
+  "description": "MC begins to understand the Mark's power, Elder reveals hidden truth, Rival makes dangerous move",
+  "created_at": "2025-12-27T01:04:25.754Z",
+  "panel_count": 35,
+  "choice_points": 0,
+  "style_id": "grave_black_ink",
+  "files": {
+    "script": "script.json",
+    "capture": "capture.md",
+    "dialogue": "dialogue.md",
+    "storyboard_prompts": "storyboard_prompts.json",
+    "continuity_report": "continuity_report.md"
+  }
+}

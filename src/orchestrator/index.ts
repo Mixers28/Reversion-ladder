@@ -5,11 +5,13 @@ import { buildPromptPack } from './promptBuilder';
 import { validateChapterScript } from './validators';
 import { writeChapterBundle, writeRootMirror, generateCaptureMd } from './compiler';
 import { runFullAutoPipeline } from './llmRunner';
+import { generateChapterImages } from './imageGenerator';
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
 import { resolve } from 'path';
 
 // Parse whether --auto flag is set
 const isAutoMode = process.argv.includes('--auto');
+const skipImagesFlag = process.argv.includes('--skip-images');
 const openaiKeyIndex = process.argv.indexOf('--openai-key');
 const openaiKey = openaiKeyIndex > -1 ? process.argv[openaiKeyIndex + 1] : undefined;
 
@@ -163,6 +165,16 @@ if (isAutoMode) {
       const { bundlePath } = writeChapterBundle(bundle);
       const rootMirrorPath = writeRootMirror(plan.chapter_id, captureMd);
 
+      // Generate images if not skipped
+      let imageStatus = '';
+      if (!skipImagesFlag) {
+        console.log('\n🎨 Generating panel images...');
+        const imageBatch = await generateChapterImages(plan.chapter_id, bundlePath);
+        imageStatus = `\n📸 Images: ${imageBatch.succeeded}/${imageBatch.total_panels} panels generated`;
+      } else {
+        imageStatus = `\n📸 Images: Skipped (use --skip-images to disable)`;
+      }
+
       console.log(`\n✅ Mode B Pipeline Complete!`);
       console.log(`\n📂 Chapter bundle: ${bundlePath}`);
       console.log(`   - script.json`);
@@ -170,7 +182,7 @@ if (isAutoMode) {
       console.log(`   - dialogue.md`);
       console.log(`   - storyboard_prompts.json`);
       console.log(`   - continuity_report.md`);
-      console.log(`   - build/manifest.json\n`);
+      console.log(`   - build/manifest.json${imageStatus}\n`);
       console.log(`📄 Root mirror: ${rootMirrorPath}\n`);
       console.log(`🚀 Next: git add -A && git push`);
       process.exit(0);
