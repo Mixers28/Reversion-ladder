@@ -7,12 +7,20 @@ export default function Index() {
           An apex cultivator, fallen and reborn. Climb again. Uncover the truth behind the Tribunal.
         </p>
         
-        <a
-          href="/reader/ch01_opening"
-          className="inline-block px-8 py-3 bg-sigil/30 hover:bg-sigil/50 border border-sigil text-sigil font-bold rounded transition-all"
-        >
-          Begin Reading
-        </a>
+        <div className="flex gap-4 justify-center">
+          <a
+            href="/reader/ch01_opening"
+            className="inline-block px-8 py-3 bg-sigil/30 hover:bg-sigil/50 border border-sigil text-sigil font-bold rounded transition-all"
+          >
+            Begin Reading
+          </a>
+          <a
+            href="/admin"
+            className="inline-block px-8 py-3 bg-cosmic/50 hover:bg-cosmic border border-cosmic text-gray-300 hover:text-white font-bold rounded transition-all"
+          >
+            Create Chapter
+          </a>
+        </div>
 
         <div className="mt-12 text-left bg-cosmic p-6 rounded border border-sigil/20">
           <h2 className="font-bold text-sigil mb-4">About This Experience</h2>
