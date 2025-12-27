@@ -50,7 +50,7 @@ class LLMRunner {
         console.log(`  📤 Running ${config.prompt_type} prompt (attempt ${attempts}/${MAX_RETRIES})...`);
 
         const response = await this.client.chat.completions.create({
-          model: 'gpt-4-turbo',
+          model: 'gpt-4o',
           max_tokens: 4096,
           temperature: config.temperature || 0.7,
           messages: [
