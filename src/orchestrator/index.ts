@@ -12,8 +12,8 @@ import { resolve } from 'path';
 // Parse whether --auto flag is set
 const isAutoMode = process.argv.includes('--auto');
 const skipImagesFlag = process.argv.includes('--skip-images');
-const openaiKeyIndex = process.argv.indexOf('--openai-key');
-const openaiKey = openaiKeyIndex > -1 ? process.argv[openaiKeyIndex + 1] : undefined;
+const anthropicKeyIndex = process.argv.indexOf('--anthropic-key');
+const anthropicKey = anthropicKeyIndex > -1 ? process.argv[anthropicKeyIndex + 1] : undefined;
 
 const args = process.argv.slice(2).join(' ');
 
@@ -28,7 +28,7 @@ if (!parsed.chapter_id || !parsed.title || !parsed.user_narrative) {
   console.error('Usage: pnpm run make:chapter --id ch01_opening --title "Title" --narrative "..."');
   console.error('Optional: --panels 20 --style grave_black_ink');
   console.error('         --auto (for Mode B: auto-run LLM)');
-  console.error('         --openai-key YOUR_KEY (or set OPENAI_API_KEY env var)');
+  console.error('         --anthropic-key YOUR_KEY (or set ANTHROPIC_API_KEY env var)');
   process.exit(1);
 }
 
@@ -86,7 +86,7 @@ if (isAutoMode) {
         prompts.dialogue_prompt,
         prompts.storyboard_prompt,
         prompts.continuity_prompt,
-        openaiKey
+        anthropicKey
       );
 
       // Save results

@@ -16,7 +16,7 @@ interface CreateChapterRequest {
   panels?: number;
   style?: string;
   skip_images?: boolean;
-  openai_key?: string;
+  anthropic_key?: string;
 }
 
 interface CreateChapterResponse {
@@ -56,12 +56,12 @@ router.post('/chapters/create', async (req: Request, res: Response<CreateChapter
     const projectRoot = resolve(__dirname, '../../..');
     const env = {
       ...process.env,
-      OPENAI_API_KEY: body.openai_key || process.env.OPENAI_API_KEY,
+      ANTHROPIC_API_KEY: body.anthropic_key || process.env.ANTHROPIC_API_KEY,
       NODE_ENV: 'production'
     };
 
     const skipImagesFlag = body.skip_images ? '--skip-images' : '';
-    const command = `cd ${projectRoot} && OPENAI_API_KEY="${env.OPENAI_API_KEY}" pnpm run make:chapter --id ${chapterId} --title "${title}" --panels ${panels} --style ${style} --narrative "${narrative}" --auto ${skipImagesFlag}`;
+    const command = `cd ${projectRoot} && ANTHROPIC_API_KEY="${env.ANTHROPIC_API_KEY}" pnpm run make:chapter --id ${chapterId} --title "${title}" --panels ${panels} --style ${style} --narrative "${narrative}" --auto ${skipImagesFlag}`;
 
     console.log(`[ADMIN] Creating chapter: ${chapterId}`);
     

@@ -1,9 +1,9 @@
 /**
  * LLM integration for Mode B (fully automated chapter generation)
- * Handles OpenAI API calls with retry logic and output validation
+ * Uses Anthropic Claude 3.5 Sonnet for superior creative writing
  */
 
-import OpenAI from 'openai';
+import Anthropic from '@anthropic-ai/sdk';
 import { validateSchema } from './validators';
 
 const MAX_RETRIES = 3;
@@ -25,19 +25,19 @@ export interface LLMRunResult {
 }
 
 class LLMRunner {
-  private client: OpenAI;
+  private client: Anthropic;
   private apiKey: string;
 
   constructor(apiKey?: string) {
-    const key = apiKey || process.env.OPENAI_API_KEY;
+    const key = apiKey || process.env.ANTHROPIC_API_KEY;
     if (!key) {
       throw new Error(
-        '❌ No OpenAI API key provided!\n' +
-        'Set OPENAI_API_KEY environment variable or pass --openai-key argument'
+        '❌ No Anthropic API key provided!\n' +
+        'Set ANTHROPIC_API_KEY environment variable or pass --anthropic-key argument'
       );
     }
     this.apiKey = key;
-    this.client = new OpenAI({ apiKey: key });
+    this.client = new Anthropic({ apiKey: key });
   }
 
   async runPrompt(config: LLMPromptConfig): Promise<LLMRunResult> {
@@ -49,15 +49,12 @@ class LLMRunner {
       try {
         console.log(`  📤 Running ${config.prompt_type} prompt (attempt ${attempts}/${MAX_RETRIES})...`);
 
-        const response = await this.client.chat.completions.create({
-          model: 'gpt-4o-mini',
+        const response = await this.client.messages.create({
+          model: 'claude-3-5-sonnet-20241022',
           max_tokens: 4096,
           temperature: config.temperature || 0.7,
+          system: config.system_message,
           messages: [
-            {
-              role: 'system',
-              content: config.system_message,
-            },
             {
               role: 'user',
               content: config.user_message,
@@ -126,13 +123,13 @@ class LLMRunner {
   }
 
   private extractTextContent(response: any): string {
-    if (response.choices && Array.isArray(response.choices) && response.choices.length > 0) {
-      const choice = response.choices[0];
-      if (choice.message && choice.message.content) {
-        let content = choice.message.content;
+    if (response.content && Array.isArray(response.content) && response.content.length > 0) {
+      const content = response.content[0];
+      if (content.type === 'text' && content.text) {
+        let text = content.text;
         // Strip markdown code blocks if present
-        content = content.replace(/```json\n?/g, '').replace(/```\n?/g, '');
-        return content.trim();
+        text = text.replace(/```json\n?/g, '').replace(/```\n?/g, '');
+        return text.trim();
       }
     }
     return '';
