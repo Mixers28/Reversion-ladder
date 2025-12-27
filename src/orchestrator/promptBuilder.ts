@@ -6,6 +6,10 @@ const styles: Record<string, any> = Object.fromEntries(
   JSON.parse(readFileSync(stylesPath, 'utf-8')).map((s: any) => [s.id, s])
 );
 
+// Load the Worthy Story Bible as key reference
+const storyBiblePath = resolve(__dirname, '../../Worthy Story Bible.md');
+const STORY_BIBLE = readFileSync(storyBiblePath, 'utf-8');
+
 const CONSISTENCY_ANCHORS = `
 MC: early-20s, lean, mud-streaked, tired eyes, torn cloth wrap, faint rash-like mark on forearm.
 Environment: mud, flies, smoke line on horizon, triage tents, hostile stares, distant horn.
@@ -63,20 +67,26 @@ export function buildPromptPack(
 function buildPlotPrompt(chapterId: string, title: string, userNarrative: string, panelCount: number): string {
   return `You are a webtoon narrative architect for WORTHY.
 
+MASTER REFERENCE - WORTHY STORY BIBLE (key source of truth):
+${STORY_BIBLE}
+
 Chapter: ${chapterId} - ${title}
 Panels needed: ${panelCount}
-User narrative: ${userNarrative}
+User narrative goal: ${userNarrative}
 
 ${CHARACTER_ROSTER}
 
-Canon constraints for ch01_opening:
-- Opens in battlefield mass grave (grim with nervous humor)
-- MC wakes here, has subtle rash-like Mark (not explained)
-- Must include: "Five more minutes... mom" line, mass grave reveal, Mark shown as rash/heat, one ruthless + one protector action
-- Triage gossip fragments (NO exposition dump)
-- Cliffhanger: horn + scouts OR "survivors erased"
-- Power system exists but NOT lectured
-- The Filter is NOT mentioned
+${CONSISTENCY_ANCHORS}
+
+INSTRUCTIONS:
+1. Use the Story Bible as your primary source of truth for worldbuilding, power system, and canon
+2. Align the user's narrative with the overall WORTHY arc (Season 1-3)
+3. Respect the core Five Pillars system (Core, Body, Mind, Flow, Domain/Intent)
+4. The Mark is subtle and tied to the Filter - seed hints but don't explain
+5. Tone is grim tension with nervous humor (never grimdark, never comedy)
+6. NO exposition dumps - weave lore as dialogue/gossip fragments only
+7. Character names MUST come from the roster above
+8. Maintain visual consistency: mud, flies, triage, hostile stares, survival context
 
 REQUIRED OUTPUT FORMAT: Valid JSON object (no markdown, no code blocks, just raw JSON)
 {
@@ -100,7 +110,7 @@ REQUIRED OUTPUT FORMAT: Valid JSON object (no markdown, no code blocks, just raw
   "choice_points": []
 }
 
-Generate exactly ${panelCount} panels with consistent narrative flow.
+Generate exactly ${panelCount} panels with consistent narrative flow that honors WORTHY canon.
 Each panel must have all required fields.
 Dialogue must be punchy (< 18 words per bubble).`;
 }
@@ -112,11 +122,24 @@ function buildScriptPrompt(chapterId: string, title: string, styleId: string, pa
 
   return `You are a webtoon script validator and refiner for WORTHY.
 
+MASTER REFERENCE - WORTHY STORY BIBLE (key source of truth):
+${STORY_BIBLE}
+
 Chapter: ${chapterId}
 Style: ${styleId} - ${style.name}
 Expected panels: ${panelCount}
 
 ${CHARACTER_ROSTER}
+
+${CONSISTENCY_ANCHORS}
+
+INSTRUCTIONS:
+1. Validate against WORTHY canon (Five Pillars, Mark mechanics, Filter lore)
+2. Ensure consistent character voices from the roster
+3. Maintain grim + nervous humor tone (never grimdark)
+4. Seed power system references but don't lecture
+5. The Mark should appear as subtle rash/heat cues, not explanations
+6. Weave worldbuilding as environment details + gossip, not exposition
 
 REQUIRED OUTPUT FORMAT: Valid JSON object (no markdown, no code blocks, just raw JSON)
 {
@@ -150,26 +173,30 @@ Rules:
 7. characters: array of character names (ONLY from roster above)
 8. sfx: array of sound effects (can be empty)
 
-Generate the complete chapter with consistent narrative flow.`;
+Generate the complete chapter honoring WORTHY canon from the Story Bible.`;
 }
 
 
 function buildDialoguePrompt(chapterId: string): string {
   return `You are a webtoon dialogue specialist for WORTHY.
 
+MASTER REFERENCE - WORTHY STORY BIBLE (key source of truth):
+${STORY_BIBLE}
+
 Chapter: ${chapterId}
 
 ${CHARACTER_ROSTER}
 
 Your task:
-1. Review existing panel dialogues
+1. Review existing panel dialogues and ensure they match character voices from WORTHY canon
 2. Generate 3 variants for each dialogue bubble (short/natural/punchy)
 3. Flag any bubbles > 18 words as "unreadable in webtoon format"
 4. Recommend final variant based on character voice, pacing, readability
-5. Ensure character voices are distinct and consistent
+5. Ensure character voices are distinct, consistent, and honor the Story Bible arc
 
-Use only the characters from the roster above.
-Maintain each character's speech patterns and personality.
+Use ONLY the characters from the roster above.
+Maintain each character's speech patterns and personality as defined in canon.
+Grim tone with nervous humor in small moments (never forced comedy).
 
 Output as markdown with structure:
 ## Panel [ID]
@@ -178,7 +205,7 @@ Output as markdown with structure:
 - Variant B: [text]  
 - Variant C: [text]
 - **Final:** [recommended]
-- **Notes:** [pacing cue or issue]`;
+- **Notes:** [pacing cue or character voice justification]`;
 }
 
 function buildStoryboardPrompt(styleId: string): string {
@@ -186,17 +213,28 @@ function buildStoryboardPrompt(styleId: string): string {
 
   return `You are a storyboard prompt engineer for Pollinations.ai image generation.
 
+MASTER REFERENCE - WORTHY STORY BIBLE (key source of truth for visual language):
+${STORY_BIBLE}
+
 Style preset: ${styleId} - ${style.name}
 
 For EACH panel, generate an image prompt following this structure:
 
 ${style.prompt_prefix}
 
+Visual Language Guidelines from WORTHY Canon:
+- Mass grave scenes: heavy blacks, tight claustrophobic crops, sudden wide reveals
+- The Mark: subtle red/vein branching pattern on forearm; one panel of heat haze or pulse SFX
+- Flow mastery: clean breath SFX, smooth motion lines, "too efficient" contrast
+- Mind mastery: small eye close-ups, micro-pauses, pattern callouts
+- Domain/Intent: panel borders subtly tilt or "rule" overlays appear (later chapters)
+- Filter foreshadow: whispered myths, refracted speech bubbles in old texts
+
 Include in each prompt:
 - Shot type (full_black, close, medium, wide, insert, action_close)
 - Location details
-- Character positioning and expression
-- Mood and lighting cues
+- Character positioning and expression (honoring roster descriptions)
+- Mood and lighting cues aligned with tone (grim + nervous humor)
 - CONSISTENCY ANCHORS:
 ${CONSISTENCY_ANCHORS}
 
@@ -209,7 +247,7 @@ Output as JSON array:
     "panel_id": 1,
     "shot": "wide",
     "location": "mass_grave",
-    "prompt": "[full generated prompt for Pollinations.ai]"
+    "prompt": "[full generated prompt for Pollinations.ai honoring WORTHY visual language]"
   },
   ...
 ]`;
@@ -218,36 +256,52 @@ Output as JSON array:
 function buildContinuityPrompt(chapterId: string): string {
   return `You are a continuity quality-assurance reviewer for WORTHY chapter scripts.
 
+MASTER REFERENCE - WORTHY STORY BIBLE (key source of truth):
+${STORY_BIBLE}
+
 Chapter: ${chapterId}
 
+${CHARACTER_ROSTER}
+
 Review the complete chapter for:
-1. Character consistency (names, appearances, motivations)
-2. Location consistency (geography, details)
-3. Timeline consistency (actions make sense in sequence)
-4. Tone consistency (grim + nervous humor maintained)
-5. Mark references (should appear as rash/heat cue)
-6. Dialogue naturalness (no info-dump, conversational)
-7. Visual variety (shots not repetitive)
-8. Pacing (is momentum maintained?)
+1. CANON ALIGNMENT: Does this honor the WORTHY Story Bible (Pillars, Mark mechanics, Filter lore)?
+2. Character consistency: Do names, appearances, and motivations match the roster + canon?
+3. Location consistency: Do geography and visual details fit the world?
+4. Timeline logic: Do character actions make sense in sequence?
+5. Tone consistency: Is it grim + nervous humor (not grimdark, not comedy)?
+6. Mark references: Does the rash/heat cue appear subtly (not explained)?
+7. Dialogue naturalness: No exposition dumps? Conversational and punchy?
+8. Visual variety: Shots not repetitive? Good shot flow?
+9. Pacing: Does momentum drive toward the user's narrative goal?
+10. Arc alignment: Does this advance the Season 1-3 overall arc?
 
 Output as markdown report:
 ## Continuity Report: ${chapterId}
 
-### Character Consistency
-- [findings]
+### Canon Alignment (WORTHY Story Bible)
+- [findings against Five Pillars, Mark, Filter, power system, tone]
 
-### Location Consistency
-- [findings]
+### Character Consistency
+- [findings on roster adherence, voices, motivations]
+
+### Location & World
+- [findings on geography, environment details, consistency]
 
 ### Timeline & Logic
-- [findings]
+- [findings on action sequence, causality]
 
 ### Tone & Voice
-- [findings]
+- [findings on grim + humor balance, character voices]
 
-### Issues Found
-- [list of problems, if any]
+### Mark & Power System
+- [findings on how power/Mark is referenced (seeded not lectured?)]
+
+### Dialogue & Exposition
+- [findings on naturalness, info-dump check]
+
+### Critical Issues Found
+- [list of violations that must be fixed]
 
 ### Recommendations
-- [suggestions for improvement]`;
+- [suggestions to strengthen alignment with canon]`;
 }
