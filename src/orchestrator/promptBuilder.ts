@@ -58,12 +58,33 @@ Canon constraints for ch01_opening:
 - Power system exists but NOT lectured
 - The Filter is NOT mentioned
 
-Output as JSON matching /schemas/chapter_script.schema.json structure.
-Include all required fields: panel_id, shot, location, visual_notes[], characters[], dialogue[], sfx[].
-Dialogue should be punchy (< 18 words per bubble).
-
-Generate the complete panels array with consistent pacing and visual flow.`;
+REQUIRED OUTPUT FORMAT: Valid JSON object (no markdown, no code blocks, just raw JSON)
+{
+  "chapter_id": "${chapterId}",
+  "title": "${title}",
+  "style_id": "clean_manhwa_shade",
+  "panels": [
+    {
+      "panel_id": 1,
+      "shot": "wide",
+      "location": "training_ground",
+      "visual_notes": ["Description of visual", "Another detail"],
+      "characters": ["MC", "Elder"],
+      "dialogue": [
+        {"speaker": "MC", "text": "Short dialogue line."},
+        {"speaker": "Elder", "text": "Response here."}
+      ],
+      "sfx": ["Sound effect"]
+    }
+  ],
+  "choice_points": []
 }
+
+Generate exactly ${panelCount} panels with consistent narrative flow.
+Each panel must have all required fields.
+Dialogue must be punchy (< 18 words per bubble).`;
+}
+
 
 function buildScriptPrompt(chapterId: string, title: string, styleId: string, panelCount: number): string {
   const style = styles[styleId];
@@ -74,17 +95,41 @@ Chapter: ${chapterId}
 Style: ${styleId} - ${style.name}
 Expected panels: ${panelCount}
 
-Review the plot outline and produce a final script JSON with:
-1. Exactly ${panelCount} panels (adjust if needed for pacing)
-2. Each panel with: panel_id, shot, location, visual_notes[], characters[], dialogue[], sfx[]
-3. Dialogue punchy and webtoon-readable (< 18 words per bubble)
-4. Visual notes descriptive but concise (for image generation)
-5. Shots varied (use: full_black, close, medium, wide, insert, action_close)
-6. Locations consistent with setting
-7. Character names consistent across panels
-
-Output ONLY valid JSON matching /schemas/chapter_script.schema.json.`;
+REQUIRED OUTPUT FORMAT: Valid JSON object (no markdown, no code blocks, just raw JSON)
+{
+  "chapter_id": "${chapterId}",
+  "title": "${title}",
+  "style_id": "${styleId}",
+  "panels": [
+    {
+      "panel_id": 1,
+      "shot": "wide",
+      "location": "location_name",
+      "visual_notes": ["Visual detail 1", "Visual detail 2"],
+      "characters": ["Character 1", "Character 2"],
+      "dialogue": [
+        {"speaker": "Character 1", "text": "Punchy dialogue under 18 words."},
+        {"speaker": "Character 2", "text": "Response."}
+      ],
+      "sfx": ["sound_effect"]
+    }
+  ],
+  "choice_points": []
 }
+
+Rules:
+1. Exactly ${panelCount} panels total
+2. Each panel MUST have: panel_id, shot, location, visual_notes[], characters[], dialogue[], sfx[]
+3. Dialogue MUST be: array of {speaker, text} objects, each text < 18 words
+4. shot values: wide, medium, close, action_close, insert, full_black
+5. Location: descriptive location name
+6. visual_notes: array of 1-3 visual descriptions
+7. characters: array of character names present in panel
+8. sfx: array of sound effects (can be empty)
+
+Generate the complete chapter with consistent narrative flow.`;
+}
+
 
 function buildDialoguePrompt(chapterId: string): string {
   return `You are a webtoon dialogue specialist for WORTHY.

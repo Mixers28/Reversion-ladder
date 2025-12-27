@@ -1,0 +1,463 @@
+{
+  "chapter_id": "ch02_survival",
+  "title": "Chapter 2: Survival",
+  "style_id": "clean_manhwa_shade",
+  "panels": [
+    {
+      "panel_id": 1,
+      "shot": "wide",
+      "location": "Dense Forest Clearing",
+      "visual_notes": ["Sunlight filtering through trees", "Wildflowers scattered on the ground"],
+      "characters": ["Alex", "Mira"],
+      "dialogue": [
+        {"speaker": "Alex", "text": "We need to find shelter before nightfall."},
+        {"speaker": "Mira", "text": "Agreed! Let's move quickly."}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 2,
+      "shot": "medium",
+      "location": "Forest Path",
+      "visual_notes": ["Footprints in the mud", "Birds flitting overhead"],
+      "characters": ["Alex", "Mira"],
+      "dialogue": [
+        {"speaker": "Alex", "text": "Look at these tracks. Someone passed by."},
+        {"speaker": "Mira", "text": "Do you think they’re friendly?"}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 3,
+      "shot": "close",
+      "location": "Forest Path",
+      "visual_notes": ["Alex's concerned expression", "Mira looking anxious"],
+      "characters": ["Alex", "Mira"],
+      "dialogue": [
+        {"speaker": "Alex", "text": "I’m not sure. We should be cautious."},
+        {"speaker": "Mira", "text": "Right. Let’s keep moving."}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 4,
+      "shot": "action_close",
+      "location": "Forest Edge",
+      "visual_notes": ["Mira peering through bushes", "Alex holding a branch"],
+      "characters": ["Alex", "Mira"],
+      "dialogue": [
+        {"speaker": "Mira", "text": "I see something ahead!"}
+      ],
+      "sfx": ["rustling leaves"]
+    },
+    {
+      "panel_id": 5,
+      "shot": "wide",
+      "location": "Abandoned Cabin",
+      "visual_notes": ["Old wooden structure", "Vines creeping up the walls"],
+      "characters": ["Alex", "Mira"],
+      "dialogue": [
+        {"speaker": "Alex", "text": "This cabin looks abandoned."},
+        {"speaker": "Mira", "text": "It could provide some shelter."}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 6,
+      "shot": "medium",
+      "location": "Inside Cabin",
+      "visual_notes": ["Dusty interior", "Broken furniture"],
+      "characters": ["Alex", "Mira"],
+      "dialogue": [
+        {"speaker": "Alex", "text": "We should check for supplies."},
+        {"speaker": "Mira", "text": "Yeah, I’ll look in the kitchen."}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 7,
+      "shot": "close",
+      "location": "Cabin Kitchen",
+      "visual_notes": ["Mira opening a cupboard", "Cobwebs hanging down"],
+      "characters": ["Mira"],
+      "dialogue": [
+        {"speaker": "Mira", "text": "Nothing but old cans. Great."}
+      ],
+      "sfx": ["clattering"]
+    },
+    {
+      "panel_id": 8,
+      "shot": "medium",
+      "location": "Cabin Living Room",
+      "visual_notes": ["Alex rummaging through drawers", "Dust flying around"],
+      "characters": ["Alex"],
+      "dialogue": [
+        {"speaker": "Alex", "text": "I found a flashlight!"}
+      ],
+      "sfx": ["drawer sliding"]
+    },
+    {
+      "panel_id": 9,
+      "shot": "wide",
+      "location": "Outside Cabin",
+      "visual_notes": ["Sky darkening", "Wind picking up"],
+      "characters": ["Alex", "Mira"],
+      "dialogue": [
+        {"speaker": "Mira", "text": "We should barricade the door."},
+        {"speaker": "Alex", "text": "Good idea!"}
+      ],
+      "sfx": ["howling wind"]
+    },
+    {
+      "panel_id": 10,
+      "shot": "action_close",
+      "location": "Cabin Entrance",
+      "visual_notes": ["Alex pushing a table against the door", "Mira looking out a window"],
+      "characters": ["Alex", "Mira"],
+      "dialogue": [
+        {"speaker": "Mira", "text": "I don’t like this storm."},
+        {"speaker": "Alex", "text": "Stay alert!"}
+      ],
+      "sfx": ["thunder rumbling"]
+    },
+    {
+      "panel_id": 11,
+      "shot": "medium",
+      "location": "Inside Cabin",
+      "visual_notes": ["Rain pouring outside", "Dark shadows in the corners"],
+      "characters": ["Alex", "Mira"],
+      "dialogue": [
+        {"speaker": "Mira", "text": "Do you think we’re safe here?"},
+        {"speaker": "Alex", "text": "For now, yes."}
+      ],
+      "sfx": ["rain pattering"]
+    },
+    {
+      "panel_id": 12,
+      "shot": "close",
+      "location": "Cabin Living Room",
+      "visual_notes": ["Alex's worried face", "Mira biting her nails"],
+      "characters": ["Alex", "Mira"],
+      "dialogue": [
+        {"speaker": "Alex", "text": "We need a plan."},
+        {"speaker": "Mira", "text": "What do you suggest?"}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 13,
+      "shot": "medium",
+      "location": "Cabin Living Room",
+      "visual_notes": ["Alex pacing", "Mira sitting on a chair"],
+      "characters": ["Alex", "Mira"],
+      "dialogue": [
+        {"speaker": "Alex", "text": "We should explore tomorrow."},
+        {"speaker": "Mira", "text": "And find a way back home."}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 14,
+      "shot": "wide",
+      "location": "Outside Cabin",
+      "visual_notes": ["Storm raging", "Lightning illuminating the sky"],
+      "characters": [],
+      "dialogue": [],
+      "sfx": ["crack of thunder"]
+    },
+    {
+      "panel_id": 15,
+      "shot": "medium",
+      "location": "Inside Cabin",
+      "visual_notes": ["Alex and Mira sitting together", "Flashlight illuminating their faces"],
+      "characters": ["Alex", "Mira"],
+      "dialogue": [
+        {"speaker": "Alex", "text": "We’ll make it through this."},
+        {"speaker": "Mira", "text": "I hope so."}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 16,
+      "shot": "close",
+      "location": "Cabin Kitchen",
+      "visual_notes": ["Mira's determined expression", "Alex looking hopeful"],
+      "characters": ["Mira", "Alex"],
+      "dialogue": [
+        {"speaker": "Mira", "text": "I’ll find food tomorrow."},
+        {"speaker": "Alex", "text": "Let’s rest now."}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 17,
+      "shot": "full_black",
+      "location": "",
+      "visual_notes": [],
+      "characters": [],
+      "dialogue": [],
+      "sfx": []
+    },
+    {
+      "panel_id": 18,
+      "shot": "wide",
+      "location": "Inside Cabin - Morning",
+      "visual_notes": ["Sunlight breaking through the window", "Birds chirping outside"],
+      "characters": ["Alex", "Mira"],
+      "dialogue": [
+        {"speaker": "Alex", "text": "Good morning!"},
+        {"speaker": "Mira", "text": "Did we survive the night?"}
+      ],
+      "sfx": ["birds chirping"]
+    },
+    {
+      "panel_id": 19,
+      "shot": "medium",
+      "location": "Cabin Living Room",
+      "visual_notes": ["Mira stretching", "Alex yawning"],
+      "characters": ["Alex", "Mira"],
+      "dialogue": [
+        {"speaker": "Alex", "text": "We need to find food."},
+        {"speaker": "Mira", "text": "I’ll check outside."}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 20,
+      "shot": "wide",
+      "location": "Outside Cabin - Forest",
+      "visual_notes": ["Morning light filtering through trees", "Fresh dew on grass"],
+      "characters": ["Mira"],
+      "dialogue": [
+        {"speaker": "Mira", "text": "I hope I find something."}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 21,
+      "shot": "medium",
+      "location": "Forest Floor",
+      "visual_notes": ["Mira kneeling", "Inspecting plants"],
+      "characters": ["Mira"],
+      "dialogue": [
+        {"speaker": "Mira", "text": "These berries look edible."}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 22,
+      "shot": "close",
+      "location": "Forest Floor",
+      "visual_notes": ["Mira's hand reaching for berries", "Bright colors of the fruit"],
+      "characters": ["Mira"],
+      "dialogue": [
+        {"speaker": "Mira", "text": "Just a few more."}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 23,
+      "shot": "medium",
+      "location": "Forest Path",
+      "visual_notes": ["Mira looking up", "Sudden rustle in the bushes"],
+      "characters": ["Mira"],
+      "dialogue": [
+        {"speaker": "Mira", "text": "What was that?"}
+      ],
+      "sfx": ["rustling"]
+    },
+    {
+      "panel_id": 24,
+      "shot": "close",
+      "location": "Bushes",
+      "visual_notes": ["A pair of eyes peeking out", "Tension in the air"],
+      "characters": [],
+      "dialogue": [],
+      "sfx": []
+    },
+    {
+      "panel_id": 25,
+      "shot": "medium",
+      "location": "Forest Path",
+      "visual_notes": ["Mira backing away slowly", "Eyes still watching her"],
+      "characters": ["Mira"],
+      "dialogue": [
+        {"speaker": "Mira", "text": "I need to get back!"}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 26,
+      "shot": "action_close",
+      "location": "Outside Cabin",
+      "visual_notes": ["Mira running back to the cabin", "Panic on her face"],
+      "characters": ["Mira"],
+      "dialogue": [
+        {"speaker": "Mira", "text": "Alex! We have a problem!"}
+      ],
+      "sfx": ["footsteps pounding"]
+    },
+    {
+      "panel_id": 27,
+      "shot": "medium",
+      "location": "Inside Cabin",
+      "visual_notes": ["Alex looking alarmed", "Mira bursting in"],
+      "characters": ["Alex", "Mira"],
+      "dialogue": [
+        {"speaker": "Alex", "text": "What happened?"},
+        {"speaker": "Mira", "text": "Something was watching me!"}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 28,
+      "shot": "close",
+      "location": "Cabin Living Room",
+      "visual_notes": ["Alex's serious face", "Mira trembling"],
+      "characters": ["Alex", "Mira"],
+      "dialogue": [
+        {"speaker": "Alex", "text": "We need to be careful."},
+        {"speaker": "Mira", "text": "I don’t want to stay here!"}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 29,
+      "shot": "medium",
+      "location": "Cabin Living Room",
+      "visual_notes": ["Alex and Mira discussing", "Flashlight on the table"],
+      "characters": ["Alex", "Mira"],
+      "dialogue": [
+        {"speaker": "Alex", "text": "We can’t panic."},
+        {"speaker": "Mira", "text": "What’s our next move?"}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 30,
+      "shot": "wide",
+      "location": "Outside Cabin",
+      "visual_notes": ["Dark clouds gathering", "Wind blowing fiercely"],
+      "characters": [],
+      "dialogue": [],
+      "sfx": ["howling wind"]
+    },
+    {
+      "panel_id": 31,
+      "shot": "medium",
+      "location": "Inside Cabin",
+      "visual_notes": ["Alex looking determined", "Mira nodding"],
+      "characters": ["Alex", "Mira"],
+      "dialogue": [
+        {"speaker": "Alex", "text": "Let’s gather our things."},
+        {"speaker": "Mira", "text": "I’m ready!"}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 32,
+      "shot": "action_close",
+      "location": "Cabin Entrance",
+      "visual_notes": ["Alex grabbing a backpack", "Mira holding the flashlight"],
+      "characters": ["Alex", "Mira"],
+      "dialogue": [
+        {"speaker": "Alex", "text": "We’ll stick together."}
+      ],
+      "sfx": ["zipper closing"]
+    },
+    {
+      "panel_id": 33,
+      "shot": "wide",
+      "location": "Outside Cabin",
+      "visual_notes": ["Mira and Alex stepping outside", "Forest looming ahead"],
+      "characters": ["Alex", "Mira"],
+      "dialogue": [
+        {"speaker": "Mira", "text": "It’s now or never."},
+        {"speaker": "Alex", "text": "Let’s go!"}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 34,
+      "shot": "medium",
+      "location": "Forest Path",
+      "visual_notes": ["Mira and Alex walking cautiously", "Trees towering over them"],
+      "characters": ["Alex", "Mira"],
+      "dialogue": [
+        {"speaker": "Alex", "text": "Stay close."},
+        {"speaker": "Mira", "text": "I won’t leave your side."}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 35,
+      "shot": "close",
+      "location": "Forest",
+      "visual_notes": ["Mira looking back nervously", "Alex scanning the area"],
+      "characters": ["Alex", "Mira"],
+      "dialogue": [
+        {"speaker": "Mira", "text": "Did you hear that?"}
+      ],
+      "sfx": ["branch snapping"]
+    },
+    {
+      "panel_id": 36,
+      "shot": "medium",
+      "location": "Forest",
+      "visual_notes": ["A shadow moving in the background", "Mira gasping"],
+      "characters": ["Mira"],
+      "dialogue": [
+        {"speaker": "Mira", "text": "Something’s following us!"}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 37,
+      "shot": "action_close",
+      "location": "Forest Path",
+      "visual_notes": ["Alex grabbing Mira's arm", "Urgency in their expressions"],
+      "characters": ["Alex", "Mira"],
+      "dialogue": [
+        {"speaker": "Alex", "text": "Run!"}
+      ],
+      "sfx": ["footsteps pounding"]
+    },
+    {
+      "panel_id": 38,
+      "shot": "wide",
+      "location": "Deep Forest",
+      "visual_notes": ["Mira and Alex sprinting", "Trees blurring past"],
+      "characters": ["Alex", "Mira"],
+      "dialogue": [
+        {"speaker": "Mira", "text": "Where do we go?"},
+        {"speaker": "Alex", "text": "Anywhere but here!"}
+      ],
+      "sfx": ["heavy breathing"]
+    },
+    {
+      "panel_id": 39,
+      "shot": "medium",
+      "location": "Forest Clearing",
+      "visual_notes": ["Mira and Alex stopping to catch their breath", "Fear in their eyes"],
+      "characters": ["Alex", "Mira"],
+      "dialogue": [
+        {"speaker": "Mira", "text": "What was that thing?"},
+        {"speaker": "Alex", "text": "I don’t know."}
+      ],
+      "sfx": []
+    },
+    {
+      "panel_id": 40,
+      "shot": "close",
+      "location": "Forest Clearing",
+      "visual_notes": ["Alex's determined expression", "Mira looking scared"],
+      "characters": ["Alex", "Mira"],
+      "dialogue": [
+        {"speaker": "Alex", "text": "We need to keep moving."},
+        {"speaker": "Mira", "text": "I’m right behind you."}
+      ],
+      "sfx": []
+    }
+  ],
+  "choice_points": []
+}

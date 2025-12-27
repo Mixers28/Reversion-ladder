@@ -1,0 +1,16 @@
+{
+  "chapter_id": "ch02_survival",
+  "title": "Chapter 2: Survival",
+  "description": "The MC trains under the village elder, discovers hints of the Body Pillar, and a rival appears with dark secrets",
+  "created_at": "2025-12-27T00:47:25.749Z",
+  "panel_count": 40,
+  "choice_points": 0,
+  "style_id": "clean_manhwa_shade",
+  "files": {
+    "script": "script.json",
+    "capture": "capture.md",
+    "dialogue": "dialogue.md",
+    "storyboard_prompts": "storyboard_prompts.json",
+    "continuity_report": "continuity_report.md"
+  }
+}

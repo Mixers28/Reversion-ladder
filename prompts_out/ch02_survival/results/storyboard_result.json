@@ -1,0 +1,32 @@
+[
+  {
+    "panel_id": 1,
+    "shot": "wide",
+    "location": "mass_grave",
+    "prompt": "Vertical webtoon panel, clean manhwa line art, soft cel shading, crisp silhouettes, clear action readability, controlled contrast, no text, no watermark. A wide shot of a mass grave site under a gray sky, with triage tents set up nearby. The main character (MC) is positioned slightly off-center, standing amidst the mud, looking weary with tired eyes and wearing a torn cloth wrap. Flies buzz around, and distant smoke can be seen on the horizon. The mood is grim, with a subtle tension in the air; side characters cast hostile stares while a faint nervous humor is visible in their expressions. The MC's forearm shows a faint rash-like branching ring, subtly red and pulsing slightly."
+  },
+  {
+    "panel_id": 2,
+    "shot": "medium",
+    "location": "triage_tent",
+    "prompt": "Vertical webtoon panel, clean manhwa line art, soft cel shading, crisp silhouettes, clear action readability, controlled contrast, no text, no watermark. A medium shot inside a triage tent, where the MC is seated on a makeshift cot, looking exhausted. The tent is dimly lit, casting shadows that enhance the grim atmosphere. The MC's expression is one of deep fatigue, with mud streaked on their face and body. A side character leans against the tent pole, smirking subtly, hinting at nervous humor despite the serious setting. The faint rash-like mark on the MC's forearm is visible, adding to the tension of the scene."
+  },
+  {
+    "panel_id": 3,
+    "shot": "close",
+    "location": "mass_grave",
+    "prompt": "Vertical webtoon panel, clean manhwa line art, soft cel shading, crisp silhouettes, clear action readability, controlled contrast, no text, no watermark. A close-up shot of the MC's forearm, focusing on the faint rash-like branching ring, with subtle redness around it. The background is blurred mud and vague outlines of triage tents, emphasizing the MC's condition. The lighting is somber, with a cool tone that heightens the sense of unease. The MC's tired eyes are barely visible in the corner of the frame, hinting at their struggle."
+  },
+  {
+    "panel_id": 4,
+    "shot": "action_close",
+    "location": "mass_grave",
+    "prompt": "Vertical webtoon panel, clean manhwa line art, soft cel shading, crisp silhouettes, clear action readability, controlled contrast, no text, no watermark. An action close-up of the MC as they step back, startled by a distant horn. The expression on their face is a mix of surprise and concern, with mud splattering around them. The background shows blurred figures of side characters, their expressions revealing a mix of tension and subtle humor. The lighting is dramatic, casting sharp contrasts that highlight the MC's mud-streaked features and the faint rash-like mark on their forearm."
+  },
+  {
+    "panel_id": 5,
+    "shot": "insert",
+    "location": "triage_tent",
+    "prompt": "Vertical webtoon panel, clean manhwa line art, soft cel shading, crisp silhouettes, clear action readability, controlled contrast, no text, no watermark. An insert shot of a small object in the MC's hand, a piece of torn cloth from their wrap, mud smeared on it. The background is the interior of the triage tent, softly lit. The mood is tense yet oddly humorous as a side character, visible in the background, makes a sarcastic remark. The focus is on the cloth, which highlights the MC's struggle and the faint rash-like mark on their forearm is subtly visible in the corner."
+  }
+]

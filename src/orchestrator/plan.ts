@@ -15,8 +15,8 @@ export interface ChapterPlan {
 }
 
 export function parseNarativeInput(input: string): Partial<ChapterPlan> {
-  // Simple parser for structured input
-  // Format: --id ch01_opening --title "Title" --panels 20 --style grave_black_ink --narrative "..."
+  // Parse command-line arguments from process.argv directly
+  const argv = process.argv.slice(2);
   
   const result: Partial<ChapterPlan> = {
     panel_count: 20,
@@ -25,24 +25,24 @@ export function parseNarativeInput(input: string): Partial<ChapterPlan> {
     character_list: []
   };
 
-  // Extract patterns
-  const idMatch = input.match(/--id\s+(\S+)/);
-  if (idMatch) result.chapter_id = idMatch[1];
-
-  const titleMatch = input.match(/--title\s+"([^"]+)"/);
-  if (titleMatch) result.title = titleMatch[1];
-
-  const panelsMatch = input.match(/--panels\s+(\d+)/);
-  if (panelsMatch) result.panel_count = parseInt(panelsMatch[1]);
-
-  const styleMatch = input.match(/--style\s+(\S+)/);
-  if (styleMatch) result.style_id = styleMatch[1];
-
-  const narrativeMatch = input.match(/--narrative\s+"([^"]+)"/);
-  if (narrativeMatch) result.user_narrative = narrativeMatch[1];
-
-  const descMatch = input.match(/--description\s+"([^"]+)"/);
-  if (descMatch) result.description = descMatch[1];
+  // Parse argv array
+  for (let i = 0; i < argv.length; i++) {
+    const arg = argv[i];
+    
+    if (arg === '--id' && i + 1 < argv.length) {
+      result.chapter_id = argv[++i];
+    } else if (arg === '--title' && i + 1 < argv.length) {
+      result.title = argv[++i];
+    } else if (arg === '--panels' && i + 1 < argv.length) {
+      result.panel_count = parseInt(argv[++i]);
+    } else if (arg === '--style' && i + 1 < argv.length) {
+      result.style_id = argv[++i];
+    } else if (arg === '--narrative' && i + 1 < argv.length) {
+      result.user_narrative = argv[++i];
+    } else if (arg === '--description' && i + 1 < argv.length) {
+      result.description = argv[++i];
+    }
+  }
 
   return result;
 }

@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "WORTHY Chapter Script Schema",
   "type": "object",
-  "required": ["chapter_id", "title", "description", "style_id", "panels", "choice_points"],
+  "required": ["chapter_id", "title", "style_id", "panels"],
   "properties": {
     "chapter_id": {
       "type": "string",
@@ -15,9 +15,9 @@
       "maxLength": 100
     },
     "description": {
-      "type": "string",
-      "minLength": 10,
-      "maxLength": 500
+      "type": ["string", "null"],
+      "maxLength": 500,
+      "description": "Optional description"
     },
     "style_id": {
       "type": "string",
@@ -93,8 +93,8 @@
       }
     },
     "choice_points": {
-      "type": "array",
-      "description": "Story branch points",
+      "type": ["array", "null"],
+      "description": "Story branch points (optional)",
       "items": {
         "type": "object",
         "required": ["panel_id", "question", "choices"],

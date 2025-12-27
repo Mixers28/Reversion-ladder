@@ -1,0 +1,452 @@
+{
+  "chapter_id": "ch02_survival",
+  "title": "Chapter 2: Survival",
+  "style_id": "clean_manhwa_shade",
+  "panels": [
+    {
+      "panel_id": 1,
+      "shot": "wide",
+      "location": "training_ground",
+      "visual_notes": ["Sunrise casting shadows over the training ground.", "The air is thick with tension."],
+      "characters": ["MC", "Elder"],
+      "dialogue": [
+        {"speaker": "MC", "text": "Why do I need to train? I just woke up!"},
+        {"speaker": "Elder", "text": "Survival is not a choice, it’s a necessity."}
+      ],
+      "sfx": ["Birds chirping"]
+    },
+    {
+      "panel_id": 2,
+      "shot": "medium",
+      "location": "training_ground",
+      "visual_notes": ["MC stands defiantly, arms crossed.", "Elder looks stern."],
+      "characters": ["MC", "Elder"],
+      "dialogue": [
+        {"speaker": "MC", "text": "I’m not some soldier!"},
+        {"speaker": "Elder", "text": "You will be if you want to live!"}
+      ],
+      "sfx": ["Wind rustling"]
+    },
+    {
+      "panel_id": 3,
+      "shot": "close-up",
+      "location": "training_ground",
+      "visual_notes": ["Zoom in on MC’s rash-like mark.", "It glows faintly."],
+      "characters": ["MC"],
+      "dialogue": [
+        {"speaker": "MC", "text": "What’s happening to me?"}
+      ],
+      "sfx": ["Faint buzzing"]
+    },
+    {
+      "panel_id": 4,
+      "shot": "wide",
+      "location": "training_ground",
+      "visual_notes": ["Elder gestures towards a training dummy.", "MC looks skeptical."],
+      "characters": ["MC", "Elder"],
+      "dialogue": [
+        {"speaker": "Elder", "text": "Start with the basics. Strike!"}
+      ],
+      "sfx": ["Thud!"]
+    },
+    {
+      "panel_id": 5,
+      "shot": "medium",
+      "location": "training_ground",
+      "visual_notes": ["MC throws a weak punch.", "Elder shakes his head."],
+      "characters": ["MC", "Elder"],
+      "dialogue": [
+        {"speaker": "Elder", "text": "Pathetic! You can do better."},
+        {"speaker": "MC", "text": "I’ll show you!"}
+      ],
+      "sfx": ["Swoosh!"]
+    },
+    {
+      "panel_id": 6,
+      "shot": "wide",
+      "location": "training_ground",
+      "visual_notes": ["MC strikes harder this time.", "The dummy topples."],
+      "characters": ["MC"],
+      "dialogue": [
+        {"speaker": "MC", "text": "How’s that?"}
+      ],
+      "sfx": ["Crash!"]
+    },
+    {
+      "panel_id": 7,
+      "shot": "medium",
+      "location": "training_ground",
+      "visual_notes": ["Elder nods approvingly.", "MC looks relieved."],
+      "characters": ["MC", "Elder"],
+      "dialogue": [
+        {"speaker": "Elder", "text": "Better. But it’s not enough."}
+      ],
+      "sfx": ["Gravel crunching"]
+    },
+    {
+      "panel_id": 8,
+      "shot": "close-up",
+      "location": "training_ground",
+      "visual_notes": ["MC wipes sweat from brow.", "The mark appears more pronounced."],
+      "characters": ["MC"],
+      "dialogue": [
+        {"speaker": "MC", "text": "This mark… it’s getting worse."}
+      ],
+      "sfx": ["Drip..."]
+    },
+    {
+      "panel_id": 9,
+      "shot": "wide",
+      "location": "training_ground",
+      "visual_notes": ["Elder points towards the horizon.", "A shadow looms."],
+      "characters": ["Elder"],
+      "dialogue": [
+        {"speaker": "Elder", "text": "Look there. A rival approaches."}
+      ],
+      "sfx": ["Footsteps echoing"]
+    },
+    {
+      "panel_id": 10,
+      "shot": "medium",
+      "location": "training_ground",
+      "visual_notes": ["A mysterious figure emerges, cloaked.", "Tension rises."],
+      "characters": ["MC", "Rival"],
+      "dialogue": [
+        {"speaker": "Rival", "text": "So, you’re the new recruit?"}
+      ],
+      "sfx": ["Cloak rustling"]
+    },
+    {
+      "panel_id": 11,
+      "shot": "close-up",
+      "location": "training_ground",
+      "visual_notes": ["Rival smirks, eyes glinting with malice.", "MC looks wary."],
+      "characters": ["MC", "Rival"],
+      "dialogue": [
+        {"speaker": "MC", "text": "What do you want?"},
+        {"speaker": "Rival", "text": "Just a friendly warning."}
+      ],
+      "sfx": ["Chilling wind"]
+    },
+    {
+      "panel_id": 12,
+      "shot": "wide",
+      "location": "training_ground",
+      "visual_notes": ["Elder steps between them.", "Tension thickens."],
+      "characters": ["Elder", "Rival"],
+      "dialogue": [
+        {"speaker": "Elder", "text": "Leave now, or face the consequences."}
+      ],
+      "sfx": ["Silence falls"]
+    },
+    {
+      "panel_id": 13,
+      "shot": "medium",
+      "location": "training_ground",
+      "visual_notes": ["Rival laughs darkly.", "MC’s fists clench."],
+      "characters": ["Rival", "MC"],
+      "dialogue": [
+        {"speaker": "Rival", "text": "Do you think you can protect them?"}
+      ],
+      "sfx": ["Malicious laughter"]
+    },
+    {
+      "panel_id": 14,
+      "shot": "close-up",
+      "location": "training_ground",
+      "visual_notes": ["MC’s resolve hardens.", "Rash-like mark glows subtly."],
+      "characters": ["MC"],
+      "dialogue": [
+        {"speaker": "MC", "text": "I’ll prove you wrong."}
+      ],
+      "sfx": ["Heart pounding"]
+    },
+    {
+      "panel_id": 15,
+      "shot": "wide",
+      "location": "training_ground",
+      "visual_notes": ["Rival steps back, eyeing MC.", "Elder looks concerned."],
+      "characters": ["Rival", "Elder"],
+      "dialogue": [
+        {"speaker": "Rival", "text": "You’ll regret this."}
+      ],
+      "sfx": ["Footsteps fading"]
+    },
+    {
+      "panel_id": 16,
+      "shot": "medium",
+      "location": "training_ground",
+      "visual_notes": ["Elder turns to MC, serious expression.", "MC appears shaken."],
+      "characters": ["Elder", "MC"],
+      "dialogue": [
+        {"speaker": "Elder", "text": "Rivals like him hold dark secrets."}
+      ],
+      "sfx": ["Wind howling"]
+    },
+    {
+      "panel_id": 17,
+      "shot": "close-up",
+      "location": "training_ground",
+      "visual_notes": ["MC’s face reflects determination.", "The mark pulsates."],
+      "characters": ["MC"],
+      "dialogue": [
+        {"speaker": "MC", "text": "I can handle it."}
+      ],
+      "sfx": ["Heartbeat"]
+    },
+    {
+      "panel_id": 18,
+      "shot": "wide",
+      "location": "training_ground",
+      "visual_notes": ["Elder begins demonstrating a technique.", "MC watches intently."],
+      "characters": ["Elder", "MC"],
+      "dialogue": [
+        {"speaker": "Elder", "text": "Focus your energy. It’s all about control."}
+      ],
+      "sfx": ["Energy crackling"]
+    },
+    {
+      "panel_id": 19,
+      "shot": "medium",
+      "location": "training_ground",
+      "visual_notes": ["Elder performs a swift move.", "MC’s eyes widen."],
+      "characters": ["Elder"],
+      "dialogue": [
+        {"speaker": "Elder", "text": "Now, you try."}
+      ],
+      "sfx": ["Whoosh!"]
+    },
+    {
+      "panel_id": 20,
+      "shot": "close-up",
+      "location": "training_ground",
+      "visual_notes": ["MC concentrates deeply.", "The mark glows fiercely."],
+      "characters": ["MC"],
+      "dialogue": [
+        {"speaker": "MC", "text": "I can do this!"}
+      ],
+      "sfx": ["Electric crackle"]
+    },
+    {
+      "panel_id": 21,
+      "shot": "wide",
+      "location": "training_ground",
+      "visual_notes": ["MC unleashes a burst of energy.", "Elder looks impressed."],
+      "characters": ["MC", "Elder"],
+      "dialogue": [
+        {"speaker": "Elder", "text": "Good! But don’t let it consume you."}
+      ],
+      "sfx": ["Boom!"]
+    },
+    {
+      "panel_id": 22,
+      "shot": "medium",
+      "location": "training_ground",
+      "visual_notes": ["MC breathes heavily, looking drained.", "Elder approaches with concern."],
+      "characters": ["Elder", "MC"],
+      "dialogue": [
+        {"speaker": "Elder", "text": "Pace yourself."}
+      ],
+      "sfx": ["Panting"]
+    },
+    {
+      "panel_id": 23,
+      "shot": "close-up",
+      "location": "training_ground",
+      "visual_notes": ["MC clenches fist, determination in eyes.", "The mark flashes."],
+      "characters": ["MC"],
+      "dialogue": [
+        {"speaker": "MC", "text": "I won’t back down!"}
+      ],
+      "sfx": ["Thump!"]
+    },
+    {
+      "panel_id": 24,
+      "shot": "wide",
+      "location": "training_ground",
+      "visual_notes": ["Elder nods, approving smile.", "MC looks more confident."],
+      "characters": ["Elder", "MC"],
+      "dialogue": [
+        {"speaker": "Elder", "text": "That’s the spirit!"}
+      ],
+      "sfx": ["Cheerful atmosphere"]
+    },
+    {
+      "panel_id": 25,
+      "shot": "medium",
+      "location": "training_ground",
+      "visual_notes": ["MC prepares for another strike.", "Elder watches closely."],
+      "characters": ["MC", "Elder"],
+      "dialogue": [
+        {"speaker": "MC", "text": "Let’s go again!"}
+      ],
+      "sfx": ["Determined breath"]
+    },
+    {
+      "panel_id": 26,
+      "shot": "close-up",
+      "location": "training_ground",
+      "visual_notes": ["Mark flickers with energy.", "MC’s focus sharpens."],
+      "characters": ["MC"],
+      "dialogue": [
+        {"speaker": "MC", "text": "I’m ready!"}
+      ],
+      "sfx": ["Pulsating energy"]
+    },
+    {
+      "panel_id": 27,
+      "shot": "wide",
+      "location": "training_ground",
+      "visual_notes": ["Suddenly, a horn blares in the distance.", "MC and Elder freeze."],
+      "characters": ["Elder", "MC"],
+      "dialogue": [
+        {"speaker": "Elder", "text": "That sound... trouble approaches!"}
+      ],
+      "sfx": ["Horn blaring"]
+    },
+    {
+      "panel_id": 28,
+      "shot": "medium",
+      "location": "training_ground",
+      "visual_notes": ["MC’s eyes widen in panic.", "Elder looks resolute."],
+      "characters": ["MC", "Elder"],
+      "dialogue": [
+        {"speaker": "MC", "text": "What do we do?"}
+      ],
+      "sfx": ["Heart racing"]
+    },
+    {
+      "panel_id": 29,
+      "shot": "close-up",
+      "location": "training_ground",
+      "visual_notes": ["Elder's face hardens.", "The mark on MC glows ominously."],
+      "characters": ["Elder"],
+      "dialogue": [
+        {"speaker": "Elder", "text": "Prepare for the worst."}
+      ],
+      "sfx": ["Tension rising"]
+    },
+    {
+      "panel_id": 30,
+      "shot": "wide",
+      "location": "training_ground",
+      "visual_notes": ["MC stands ready, fists clenched.", "Elder takes a defensive stance."],
+      "characters": ["MC", "Elder"],
+      "dialogue": [
+        {"speaker": "MC", "text": "I won’t let them take us!"}
+      ],
+      "sfx": ["Ground shaking"]
+    },
+    {
+      "panel_id": 31,
+      "shot": "medium",
+      "location": "training_ground",
+      "visual_notes": ["Figures of scouts appear in the distance.", "Their intent is clear."],
+      "characters": ["MC", "Elder"],
+      "dialogue": [
+        {"speaker": "Elder", "text": "Stay focused!"}
+      ],
+      "sfx": ["Marching footsteps"]
+    },
+    {
+      "panel_id": 32,
+      "shot": "close-up",
+      "location": "training_ground",
+      "visual_notes": ["MC’s eyes lock onto the approaching figures.", "The mark pulses with energy."],
+      "characters": ["MC"],
+      "dialogue": [
+        {"speaker": "MC", "text": "I’m ready to fight!"}
+      ],
+      "sfx": ["Adrenaline rushing"]
+    },
+    {
+      "panel_id": 33,
+      "shot": "wide",
+      "location": "training_ground",
+      "visual_notes": ["Elder prepares to charge forward.", "MC follows closely behind."],
+      "characters": ["Elder", "MC"],
+      "dialogue": [
+        {"speaker": "Elder", "text": "Then let’s show them our strength!"}
+      ],
+      "sfx": ["Battle cry"]
+    },
+    {
+      "panel_id": 34,
+      "shot": "medium",
+      "location": "training_ground",
+      "visual_notes": ["Scouts halt, eyeing them with malicious intent.", "A fight looms."],
+      "characters": ["Scouts", "MC", "Elder"],
+      "dialogue": [
+        {"speaker": "Scout", "text": "You think you can stand against us?"}
+      ],
+      "sfx": ["Sinister laughter"]
+    },
+    {
+      "panel_id": 35,
+      "shot": "close-up",
+      "location": "training_ground",
+      "visual_notes": ["MC’s determination intensifies.", "The mark glows even brighter."],
+      "characters": ["MC"],
+      "dialogue": [
+        {"speaker": "MC", "text": "We will fight for our home!"}
+      ],
+      "sfx": ["Power surging"]
+    },
+    {
+      "panel_id": 36,
+      "shot": "wide",
+      "location": "training_ground",
+      "visual_notes": ["The clash begins, chaos erupts.", "Elder leads the charge."],
+      "characters": ["Elder", "MC", "Scouts"],
+      "dialogue": [
+        {"speaker": "Elder", "text": "Now!"}
+      ],
+      "sfx": ["Clashing metal"]
+    },
+    {
+      "panel_id": 37,
+      "shot": "medium",
+      "location": "training_ground",
+      "visual_notes": ["MC throws punches with newfound energy.", "Elder defends fiercely."],
+      "characters": ["MC", "Elder"],
+      "dialogue": [
+        {"speaker": "MC", "text": "I won’t let you win!"}
+      ],
+      "sfx": ["Grunts of effort"]
+    },
+    {
+      "panel_id": 38,
+      "shot": "close-up",
+      "location": "training_ground",
+      "visual_notes": ["Rival watches from a distance, smirking.", "His intentions remain unclear."],
+      "characters": ["Rival"],
+      "dialogue": [
+        {"speaker": "Rival", "text": "Let the games begin."}
+      ],
+      "sfx": ["Eerie silence"]
+    },
+    {
+      "panel_id": 39,
+      "shot": "wide",
+      "location": "training_ground",
+      "visual_notes": ["The battle rages on, tension at its peak.", "MC’s mark glows brighter than ever."],
+      "characters": ["MC", "Elder", "Scouts"],
+      "dialogue": [
+        {"speaker": "Elder", "text": "Push forward!"}
+      ],
+      "sfx": ["Rumbling ground"]
+    },
+    {
+      "panel_id": 40,
+      "shot": "close-up",
+      "location": "training_ground",
+      "visual_notes": ["MC’s eyes reflect determination amidst chaos.", "The mark radiates power."],
+      "characters": ["MC"],
+      "dialogue": [
+        {"speaker": "MC", "text": "This is just the beginning!"}
+      ],
+      "sfx": ["Roaring energy"]
+    }
+  ],
+  "choice_points": []
+}

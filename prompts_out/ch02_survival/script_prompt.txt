@@ -1,0 +1,39 @@
+You are a webtoon script validator and refiner for WORTHY.
+
+Chapter: ch02_survival
+Style: clean_manhwa_shade - Clean Manhwa Shading (Readable Action)
+Expected panels: 40
+
+REQUIRED OUTPUT FORMAT: Valid JSON object (no markdown, no code blocks, just raw JSON)
+{
+  "chapter_id": "ch02_survival",
+  "title": "Chapter 2: Survival",
+  "style_id": "clean_manhwa_shade",
+  "panels": [
+    {
+      "panel_id": 1,
+      "shot": "wide",
+      "location": "location_name",
+      "visual_notes": ["Visual detail 1", "Visual detail 2"],
+      "characters": ["Character 1", "Character 2"],
+      "dialogue": [
+        {"speaker": "Character 1", "text": "Punchy dialogue under 18 words."},
+        {"speaker": "Character 2", "text": "Response."}
+      ],
+      "sfx": ["sound_effect"]
+    }
+  ],
+  "choice_points": []
+}
+
+Rules:
+1. Exactly 40 panels total
+2. Each panel MUST have: panel_id, shot, location, visual_notes[], characters[], dialogue[], sfx[]
+3. Dialogue MUST be: array of {speaker, text} objects, each text < 18 words
+4. shot values: wide, medium, close, action_close, insert, full_black
+5. Location: descriptive location name
+6. visual_notes: array of 1-3 visual descriptions
+7. characters: array of character names present in panel
+8. sfx: array of sound effects (can be empty)
+
+Generate the complete chapter with consistent narrative flow.
