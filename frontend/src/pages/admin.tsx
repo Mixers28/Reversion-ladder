@@ -15,7 +15,7 @@ export default function Admin() {
     narrative: '',
     panels: 35,
     style: 'grave_black_ink',
-    anthropic_key: ''
+    openai_key: ''
   });
 
   const [loading, setLoading] = useState(false);
@@ -64,7 +64,7 @@ export default function Admin() {
           narrative: '',
           panels: 35,
           style: 'grave_black_ink',
-          anthropic_key: ''
+          openai_key: ''
         });
       } else {
         setMessage({
@@ -204,17 +204,17 @@ export default function Admin() {
               </select>
             </div>
 
-            {/* Anthropic API Key */}
+            {/* OpenAI API Key */}
             <div>
               <label className="block text-sm font-semibold text-sigil mb-2">
-                Anthropic API Key (Optional - uses env var if not provided)
+                OpenAI API Key (Optional - uses env var if not provided)
               </label>
               <input
                 type="password"
-                name="anthropic_key"
-                value={formData.anthropic_key}
+                name="openai_key"
+                value={formData.openai_key}
                 onChange={handleInputChange}
-                placeholder="claude-..."
+                placeholder="sk-proj-..."
                 className="w-full px-4 py-2 bg-void border border-sigil/30 text-white rounded focus:outline-none focus:border-sigil"
               />
               <p className="text-xs text-gray-400 mt-1">Not stored, only used for this request</p>
@@ -250,15 +250,15 @@ export default function Admin() {
 
         {/* Info */}
         <div className="mt-8 p-4 bg-cosmic border border-sigil/20 rounded text-xs text-gray-400">
-          <p className="mb-2"><strong>How it works (Claude 3.5 Sonnet):</strong></p>
+          <p className="mb-2"><strong>How it works (OpenAI GPT-4 Turbo):</strong></p>
           <ul className="space-y-1 list-disc list-inside">
             <li>Triggers the WORTHY orchestrator backend (Mode B)</li>
-            <li>Generates plot, script, dialogue via Anthropic Claude 3.5 Sonnet</li>
-            <li>Better creative writing, character voices, and narrative coherence</li>
+            <li>Generates plot, script, dialogue via OpenAI gpt-4-turbo</li>
+            <li>Guided by WORTHY Story Bible for canon-aware generation</li>
             <li>Creates panel storyboards and character sketches</li>
             <li>Stores output in /chapters/{'{id}'} directory</li>
             <li>Typical generation time: 2-3 minutes per chapter</li>
-            <li>Cost: ~$0.15-0.25 per chapter (comparable to GPT-4o-mini)</li>
+            <li>Cost: ~$0.25-0.40 per chapter (higher quality than gpt-4o-mini)</li>
           </ul>
         </div>
       </div>
