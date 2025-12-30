@@ -1,4 +1,19 @@
-# Project: (Working Title) **WORTHY**
+# 1. Apply database schema to Supabase
+psql $DATABASE_URL -f schemas/orchestrator.schema.sql
+
+# 2. Seed canonical references
+node scripts/seed-orchestrator-tables.js
+
+# 3. Start backend
+cd backend && npm run dev
+
+# 4. Test API (example: start new page)
+curl -X POST http://localhost:3001/api/orchestrator/start-page \
+  -H "Content-Type: application/json" \
+  -d '{"chapterId": "ch01_test_orchestrator", "userInput": "MC discovers Mark glows"}'
+
+# 5. Check page status
+curl http://localhost:3001/api/orchestrator/page/ch01_test_orchestrator_page_001/status# Project: (Working Title) **WORTHY**
 **Format:** Manhua/Webtoon vertical scroll  
 **Goal:** A coherent **Season 1–3 arc** + a **panel-ready Chapter 1 opening** that matches our current direction:
 - **Chapter 1 starts in a mass grave** (grim with nervous humor).

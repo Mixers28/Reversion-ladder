@@ -6,6 +6,7 @@ import chaptersRouter from './routes/chapters';
 import choicesRouter from './routes/choices';
 import sketchesRouter from './routes/sketches';
 import adminRouter from './routes/admin';
+import orchestratorRouter from './routes/orchestrator';
 
 dotenv.config();
 
@@ -13,13 +14,15 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Middleware
-app.use(cors({
-  origin: [
-    'http://localhost:3000',
-    'http://localhost:3001',
-    'https://reversion-ladder-wnp6.vercel.app'
-  ]
-}));
+const allowedOrigins = [
+  'http://localhost:3000',
+  'http://localhost:3001',
+  'http://localhost:3002',
+  'https://reversion-ladder-wnp6.vercel.app',
+  process.env.CORS_ORIGIN
+].filter((origin): origin is string => Boolean(origin));
+
+app.use(cors({ origin: allowedOrigins }));
 app.use(express.json({ limit: '10mb' }));
 
 // Initialize Supabase client
@@ -33,6 +36,7 @@ app.use('/api/chapters', chaptersRouter);
 app.use('/api/choices', choicesRouter);
 app.use('/api/sketches', sketchesRouter);
 app.use('/api/admin', adminRouter);
+app.use('/api/orchestrator', orchestratorRouter);
 
 // Health check
 app.get('/api/health', (req, res) => {
